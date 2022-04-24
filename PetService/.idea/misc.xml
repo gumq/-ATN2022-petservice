@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/drawable/side_nav_bar.xml" value="0.1385" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_about_us.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_become_walker.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_booking.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_cart.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_contact_us.xml" value="0.19322916666666667" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_customer_map.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_date_time_picker.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_detail.xml" value="0.19322916666666667" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_login.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_maps.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_pet_list_view.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_schedule_setfor__walker.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_service_search.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_shopping_cart.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_signup.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_splash.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_swipe.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_user.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_user__bookings.xml" value="0.19322916666666667" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_user_home_screen.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_user_profile.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_walker__search.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_walker_form.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/activity_walker_profile_.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/add_pets_dialog.xml" value="0.19322916666666667" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/app_bar_user_home_screen.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/available_time_list.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/badge_layout.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/bookinglistdata.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/cameraoptions.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/cart_card.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/cart_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/content_user_home_screen.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/nav_header_user_home_screen.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/pet_list_data.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/pet_update_dialog.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/swipe_layout.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/timeoptionmenuonlist.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/timepicker.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/user_details_update_dialog.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/layout/walker_list_data.xml" value="0.14583333333333334" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/menu/activity_user_home_screen_drawer.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/menu/menu_main.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/menu/user_home_screen.xml" value="0.15989583333333332" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1385" />
+        <entry key="..\:/Dowloads/JustPetsProject-master/JustPetsProject-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1385" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
