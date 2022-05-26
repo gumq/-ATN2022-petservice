@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#B4D5E5</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorSecondary">#FFC107</color>
-    <color name="colorOrange">#FF8C00</color>
-    <color name="colorPrimaryLight">#EDE7F6</color>
-    <color name="colorbasic">#ffff</color>
-    <color name="fragrance_title">#4c4c4c</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_bottom">#88D6FF</color>
+    <color name="background_top">#CFEDFD</color>
+    <color name="hint">#EB444B54</color>
+    <color name="cards_background">#F89B28</color>
+    <color name="order_finish">#2FB80A</color>
+    <color name="custom_toast">#DF202020</color>
+    <color name="titles">#444B54</color>
+    <color name="background_menu_sheet">#444B54</color>
+    <color name="selected_menu_sheet">#3D444D</color>
+    <color name="background_adapter_shoppingCart">#C9ECFF</color>
+    <color name="edittext_base">#27B5FF</color>
+    <color name="border_address_finishPurchase">#44BFFF</color>
+    <color name="sheetNoSelected">#6E7680</color>
+    <color name="background_Details_Products">#444B54</color>
+    <color name="background_bottom_devicePresentation">#141517</color>
+    <color name="background_top_devicePresentation">#32373E</color>
+    <color name="background_address_alert">#C9ECFF</color>
+    <color name="bg_product_details">#383D42</color>
 
-    <color name="line">#D3D3D3</color>
 
-    <color name="fragranceColor">#FFFFFF</color>
+    <!-- Cards Colors -->
+    <color name="mastercard" >#000</color>
+    <color name="visacard">#A3831C</color>
+    <color name="maestrocard">#0a3a44</color>
+    <color name="hipercard">#7E2522</color>
+    <color name="elo">#22647E</color>
 
-    <color name="colorLine">#D3D3D3</color>
-
-    <color name="black_overlay">#66000000</color>
+    <!-- Device Presentation -->
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="tab_indicator_gray">#A8C0C0C0</color>
+    <color name="device_presentation_title_color">#fff</color>
+    <color name="device_presentation_description_color">#807F7F</color>
 
 </resources>

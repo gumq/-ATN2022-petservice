@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JustPetsProject-master.iml" filepath="$PROJECT_DIR$/.idea/modules/JustPetsProject-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JustPetsProject-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JustPetsProject-master.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PalacePetz.iml" filepath="$PROJECT_DIR$/.idea/modules/PalacePetz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PalacePetz.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PalacePetz.app.iml" />
     </modules>
   </component>
 </project>

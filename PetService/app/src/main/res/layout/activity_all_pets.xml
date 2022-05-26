@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activitys.Pets.AllPetsActivity">
+
+    <!-- Base Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Btn Go Back -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnBackPets"
+            android:layout_width="50dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/hint"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Arrow Back -->
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/arrow_left_white" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- RecyclerView All Pets -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerAllPets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Container No Pets -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_noPets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_myorder_adapter"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Animation -->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_doggyErrorOrder"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/error_doggy" />
+
+            <!-- Text No Orders -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:maxWidth="300dp"
+                android:text="@string/no_pet_registered"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anim_doggyErrorOrder" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Card btn Register Pet -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnRegisterPet"
+            android:layout_width="334dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#27B5FF"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/containerInfoPets">
+
+            <!-- Text Register Pet -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/register_pet"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

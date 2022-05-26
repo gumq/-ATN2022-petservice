@@ -1,35 +1,390 @@
 <resources>
-    <string name="app_name">Just Pets</string>
-    <string name="facebook_application_id" translatable="false">858268301044531</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_name" translatable="false">PetShoppe</string>
 
-    <string name="action_logout">Log Out</string>
-    <string name="title_activity_bottom">BottomActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <!-- Tools -->
+    <string name="loading">Loading…</string>
+    <string name="one" translatable="false">1</string>
+    <string name="filter_animals">Filter animals</string>
+    <string name="dogs">Chó</string>
+    <string name="cats">Mèo</string>
+    <string name="hamster" translatable="false">Hamster</string>
+    <string name="birds">Chim</string>
+    <string name="consultations">Consultation</string>
+    <string name="weHaveAProblem">We have a problem with our server.\nTry again later</string>
+    <string name="select_payment_method">Select a payment method.</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="weve_sent_youanEmail_password">We\'ve sent you an email so you can change your password.</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_user_home_screen">Just Pets</string>
-    <string name="title_activity_walker__home__screen">Walker_Home_Screen</string>
-    <string name="title_activity_maps">Map</string>
+    <!-- Sing In / Sing Up Screen -->
+    <string name="login">ĐĂNG NHẬP</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sing_in">Sing in</string>
+    <string name="forgot_your_password_recover">Forgot your password?</string>
+    <string name="sing_up"><u>Sing up</u></string>
+    <string name="remember_me">Remember me</string>
+    <string name="create_account">Create Account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="minimum_eight_characters">Minimum 8 characters</string>
+    <string name="passwords_do_not_match">Passwords do not match</string>
+    <string name="haveAccount_signIn">Already have an account? <b>Sign in.</b></string>
+    <string name="necessary_to_insert_the_last_name">Cần thiết để chèn họ</string>
+    <string name="necessary_to_insert_the_First_name">Cần thiết để chèn tên</string>
+    <string name="email_required">Email, cpf or username is required</string>
+    <string name="informed_email_is_invalid">Informed email is invalid</string>
+    <string name="password_required">Password required</string>
+    <string name="password_cannot_contain_spaces">Password cannot contain spaces</string>
+    <string name="password_needs">Your password needs at least 8 characters, 1 letter, 1 number and a special character</string>
+    <string name="forgot_the_password">FORGOT PASSWORD?</string>
+    <string name="authFailed_thisEmail">Authentication failed!\nThis email is already registered.</string>
+    <string name="hello_emailSend">Hello, your user has been successfully registered :)\nWe sent a verification email to the registered email, please confirm in the email before logging in.</string>
+    <string name="ok_i_will_confirm">OK, I will confirm</string>
+    <string name="txt_weVerify_email_not_verified">We verify that your email has not been confirmed, please confirm your account with the email we sent you.</string>
+    <string name="invalidEmailOrPassword">Invalid email or password.</string>
 
-    <string name="quantity">Quantity</string>
-    <string name="brew_tea">ADD TO CART</string>
-    <string name="initial_cost">$0.00</string>
-    <string name="initial_quantity_value">1</string>
-    <string name="total">Total</string>
-    <string name="price">PRICE: </string>
-    <string name="action_cart">Shopping Cart</string>
-    <string name="add_to_cart">Add to Cart</string>
-    <string name="add">Add</string>
+    <!-- Device Presentation -->
+    <string name="next">Next </string>
+    <string name="skip">Skip</string>
+    <string name="pair_my_fountain">Pair my fountain</string>
+    <string name="text_one_devicePresentation">The Palace Fountain is an equipment where you put the food and water for your pet you will have total control through our app.</string>
+
+    <!-- PairDevice -->
+    <string name="bluetooth_enable_success">Bluetooth Enabled successfully</string>
+    <string name="bluetooth_couldnt_success">Bluetooth couldn\'t be enabled</string>
+    <string name="no_paired_device">No paired devices found, please pair your PalacePetz device and try again</string>
+    <string name="connecting">Connecting</string>
+    <string name="tips_pair_device">Pairing Tips</string>
+
+    <!-- Tips Device -->
+    <string name="tip01">1 - Turn on your phone\'s bluetooth;</string>
+    <string name="tip02">2 - Click on Palace_Fountain;</string>
+    <string name="tip03">3 - Then click Connect;</string>
+    <string name="tip04">4 - Then return here and click on continue.</string>
+    <string name="tip05_connect">If you are unable to connect, please contact PalacePetz</string>
+    <string name="txt_continue">Continue</string>
+
+    <!-- Controlling Device -->
+    <string name="could_connect_verify_device">Could not connect to device.\nPlease verify if your device is on.</string>
+    <string name="noProblem_lets_help_you">NO PROBLEM,\nLET\'S HELP YOU.</string>
+    <string name="change_password">Change Password</string>
+    <string name="put_water">PUT WATER</string>
+    <string name="put_racao">PLACE RATION</string>
+    <string name="disconnect">DISCONNECT</string>
+
+    <!-- Sheet Menu -->
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="really_want_logOut">Bạn có muốn đăng xuất!</string>
+    <string name="logout">LogOut</string>
+    <string name="historic">LỊCH SỬ MUA HÀNG</string>
+    <string name="leave">Leave</string>
+
+    <!-- Profile / EditProfile Screen -->
+    <string name="personalname">Personal Name</string>
+    <string name="emailexample" translatable="false">emailexample@gmail.com</string>
+    <string name="cpfExample" translatable="false">000000000</string>
+    <string name="cepexample" translatable="false">00000-000</string>
+    <string name="address">Address</string>
+    <string name="complement">Complement</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="gallery">Gallery</string>
     <string name="cancel">Cancel</string>
-    <string name="fragrance_name">Fragrance Name</string>
-    <string name="title_activity_customer_map">Map</string>
+    <string name="select_upload_method">Select the upload method</string>
+    <string name="change_profile_photo">Change profile photo</string>
+    <string name="camera">Camera</string>
+    <string name="cpf">CPF</string>
+    <string name="cep">ZIPCODE</string>
+    <string name="couldnt_insert">Couldn\'t insert your profile image</string>
+    <string name="select_an_image">Select an image</string>
+    <string name="uploadFailed">Upload failed please try again later</string>
 
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- Register / Update Address -->
+    <string name="title_activity_register_address" translatable="false">Map</string>
+    <string name="register_address">REGISTER ADDRESS</string>
+    <string name="street">Street</string>
+    <string name="number">Number</string>
+    <string name="home" translatable="false">TRANG CHÍNH</string>
+    <string name="palaceFountain">KHU THÀNH VIÊN VIP</string>
+    <string name="myOrders">ĐƠN HÀNG CỦA TÔI</string>
+    <string name="zipCode_is_invalid">ZipCode is invalid</string>
+    <string name="error_in_get_your_address">Error in get your address</string>
+    <string name="title_activity_maps" translatable="false">Map</string>
+    <string name="your_address_updated_successfully">Your address has been updated successfully</string>
+    <string name="zipcode_field_incorretly">Zip code field is incorrectly filled</string>
+    <string name="street_field_incorretly">Street field is incorrectly filled</string>
+    <string name="number_field_incorretly">Number field is incorrectly filled</string>
+    <string name="phone">Phone</string>
+    <string name="edit_address">Edit my Address</string>
+
+
+    <!-- Products -->
+    <string name="products">CÁC SẢN PHẨM</string>
+    <string name="lowest_price">GIÁ THẤP NHẤT</string>
+    <string name="biggest_price">GIÁ CAO NHẤT</string>
+    <string name="popular" translatable="false">Phổ biến</string>
+
+    <!-- Products Details -->
+    <string name="less" translatable="false">-</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="buyNow">Mua Ngay</string>
+    <string name="product_name">Tên sản phẩm</string>
+    <string name="price">GIÁ</string>
+    <string name="cpfinformedisInvalid">SĐT không tồn tại</string>
+    <string name="my_shopping_cart">GIỎ HÀNG</string>
+    <string name="your_ShoppingCart_asEmpty">GIỎ HÀNG CỦA BẠN HIỆN TRỐNG.</string>
+    <string name="see_products">XEM NHIỀU SẢN PHẨM</string>
+    <string name="you_dont_haveAddressRegistered">BẠN CHƯA CÓ ĐỊA CHỈ ĐĂNG KÝ.</string>
+    <string name="sign_up_now">ĐĂNG KÍ NGAY!</string>
+    <string name="sign_up_latter">ĐĂNG KÍ SAU</string>
+
+    <!-- Card / Card Registration -->
+    <string name="ex_shelfLife_card" translatable="false">XX/XX</string>
+    <string name="ex_numberCard_card" translatable="false">•••• •••• •••• ••••</string>
+    <string name="fulanodetal" translatable="false">Falano de Tal</string>
+    <string name="myCards">THẺ CỦA TÔI</string>
+    <string name="registered_cards">ĐĂNG KÍ THẺ</string>
+    <string name="no_card_registered">KHÔNG CÓ THẺ ĐĂNG KÍ</string>
+    <string name="add_card">THÊM THẺ</string>
+    <string name="add_new_card">Thêm thẻ mới</string>
+    <string name="cardNumber">Số Thẻ</string>
+    <string name="expiration_date">Ngày hết hạn</string>
+    <string name="cvv" translatable="false">CVV</string>
+    <string name="name_printed_on_the_card">Tên in trên thẻ</string>
+    <string name="no_flag_selected">Thẻ không được yêu cầu</string>
+    <string name="cardNumber_wrongInsert">Số thẻ không chính xác</string>
+    <string name="shelfLife_incorrectly">Hạn hết hạn không chính xác</string>
+    <string name="cvv_inserted_incorrectly">CVV chèn không chính xác</string>
+    <string name="name_incorrectly_inserted">Name nhập vào không chính xác</string>
+    <string name="yours_cards">THẺ CỦA BẠN</string>
+    <string name="remove_registred_card">Bạn có muốn xóa bỏ thẻ đã đăng kí?</string>
+    <string name="remove">Xóa</string>
+    <string name="card_not_found">Thẻ không tồn tại</string>
+
+    <!-- Services -->
+    <string name="services">DỊCH VỤ</string>
+    <string name="choose_a_service">CHỌN MỘT DỊCH VỤ</string>
+    <string name="veterinary_consultation">TƯ VẤN THÚ Y</string>
+    <string name="bath_and_tosa">TẮM VÀ LÀM ĐẸP</string>
+    <string name="schedule_consultation">TƯ VẤN LỊCH TRÌNH</string>
+    <string name="schedule_bath_and_tosa">TƯ VẤN TẮM VÀ LÀM ĐẸP</string>
+    <string name="select_a_time">Chọn thời gian</string>
+    <string name="select_a_date">Chọn ngày</string>
+    <string name="its_not_possible_scheduleYear">Không thể lên lịch một cuộc hẹn vào năm nhất định.</string>
+    <string name="its_not_possible_scheduleMonth">Không thể lên lịch một cuộc hẹn vào tháng nhất định.</string>
+    <string name="its_not_possible_scheduleDay">
+Không thể đặt lịch hẹn vào ngày đã thông báo.</string>
+    <string name="sorryButPalaceWillBeCosed">Xin lỗi, nhưng vào thời gian đã chọn, PetShope sẽ đóng cửa</string>
+    <string name="description">Miêu tả..</string>
+    <string name="to_schedule">LÊN LỊCH</string>
+    <string name="select_your_pet">Chọn thú cưng của bạn.</string>
+    <string name="select_a_veterinarian">Chọn một bác sĩ thú y.</string>
+    <string name="WITHDRAWAL_DELIVERY">RÚT TIỀN / GIAO HÀNG</string>
+    <string name="optionOneDeliveryMethod">1 - Tôi sẽ đưa Thú cưng | Nhận tại nơi ở</string>
+    <string name="optionTwoDeliveryMethod">2 - Tôi sẽ lấy Pet | Rút tiền trong PetShop</string>
+    <string name="optionThreeDeliveryMethod">3 - PetShop sẽ lấy con vật | Tôi sẽ rút tiền trong PetShop</string>
+    <string name="optionFourDeliveryMethod">4 - PetShop sẽ lấy thú | Nhận tại nơi ở</string>
+    <string name="add_to_cart">THÊM VÀO GIỎ HÀNG</string>
+    <string name="one_is_the_minumum_quantity"> 1 là số lượng tối thiểu</string>
+    <string name="maximum_amount_reached">Đã đạt đến số lượng tối đa, chỉ có thể thêm vào giỏ hàng của bạn 20 đơn vị sản phẩm.</string>
+    <string name="see_my_pets">Xem thú cưng của tôi</string>
+    <string name="inappropriateUserName">Chúng tôi nhận thấy rằng tên đã nhập cho người dùng của bạn không phù hợp, vui lòng thay đổi nó.</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="warning_no_stock">Chúng tôi xin lỗi vì sự bất tiện này, hiện tại chúng tôi đã hết hàng trong sản phẩm này!!</string>
+    <string name="no_stock">KHÔNG CÓ CỔ PHẦN</string>
+    <string name="qrcode">QrCode</string>
+    <string name="you_have_moreOf_theree_cards">Bạn đã đăng ký nhiều hơn 3 thẻ</string>
+    <string name="card_already_inserted">Thẻ đã được lắp vào</string>
+    <string name="have_new_version">Chúng tôi có sẵn bản cập nhật ứng dụng mới ,cập nhật ngay!</string>
+    <string name="updatenow">Cập nhật ngay!</string>
+    <string name="updatelater">Cập nhật sau</string>
+    <string name="register_pet">Đăng ký thú cưng</string>
+    <string name="pet_name">Tên thú nuôi</string>
+    <string name="age">Tuổi</string>
+    <string name="weight">Cân nặng</string>
+    <string name="breed">Giống</string>
+    <string name="species">Giống loài</string>
+    <string name="upload_animal_photo">Tải lên ảnh động vật</string>
+    <string name="first_insert_petName">Đầu tiên hãy chèn tên vật nuôi</string>
+    <string name="register">Đăng kí</string>
+    <string name="edit">Sửa</string>
+    <string name="we_verify_yourEmailOrPassword">Chúng tôi xác minh rằng email hoặc mật khẩu của bạn đã được thay đổi !! \ nVui lòng đăng nhập lại.</string>
+    <string name="fish">Cá</string>
+    <string name="rabbit">Thỏ</string>
+    <string name="clear_filters">Xóa bộ lọc</string>
+    <string name="product_successfully_inserted">Sản phẩm đã được thêm thành công !!</string>
+    <string name="product_into_your_cart">Sản phẩm này đã có trong giỏ hàng của bạn.</string>
+    <string name="total">Toàn bộ</string>
+    <string name="order_now">Đặt hàng ngay bây giờ</string>
+    <string name="what_would_you_this_product">Bạn muốn làm gì với sản phẩm này?</string>
+    <string name="the_select_product_isnt_on_yourCart">Sản phẩm được chọn để loại bỏ không có trong giỏ hàng của bạn</string>
+    <string name="payment">Sự chi trả</string>
+    <string name="approve_and_pay">Phê duyệt và thanh toán</string>
+    <string name="subTotal" translatable="false">Tổng phụ</string>
+    <string name="coupons">Phiếu giảm giá</string>
+    <string name="discounts">Giảm giá</string>
+    <string name="redeem_coupon">Đổi phiếu giảm giá</string>
+    <string name="txt_redeem_coupon">Chèn xuống bên dưới mã phiếu giảm giá của bạn và tiếp theo nhấn nút đổi để kích hoạt phiếu giảm giá của bạn.</string>
+    <string name="coupon">Phiếu mua hàng</string>
+    <string name="coupon_successfully_apply">Coupon successfully apply!!</string>
+    <string name="coupon_used_before">You already used this coupon before.</string>
+    <string name="coupon_not_exist">Sorry for the inconvenience but this coupon not exist.</string>
+    <string name="expired_coupon">Sorry for the inconvenience but this coupon has expired.</string>
+    <string name="txt_note_coupon">Note. When activating a coupon, it will be activated for your account, but if you activate another coupon, the previous coupon will not be available for use.</string>
+    <string name="you_already_have_apply_coupon">You already have a coupon applied</string>
+    <string name="msg_coupon_alredyApply">Do you want to dispense with the previous coupon and <b>try</b> to apply this new one?</string>
+    <string name="dismiss_coupon">Dismiss coupon.</string>
+    <string name="warning">WARNING</string>
+    <string name="are_you_sure_doYouWantDeleteCoupon">Do you really want to discard the previous coupon?</string>
+    <string name="coupon_can_not_be_null">The coupon field cannot be null.</string>
+    <string name="need_register_address_purchase">In order to complete your purchase you need to have a registered address.</string>
+    <string name="necessary_select_a_creditCard">It is necessary to select a credit card.</string>
+    <string name="order_completed_message">Hello, your order was successfully placed, we sent you an email with your order details.\nThank you very much for your trust.</string>
+    <string name="order">Đặt</string>
+    <string name="created_in">ĐƯỢC TẠO RA TẠI</string>
+    <string name="status">Trạng thái</string>
+    <string name="track_order">Theo dõi thứ tự</string>
+    <string name="txt_no_orders">Bạn vẫn chưa có đơn đặt hàng nào được đăng ký, hãy tận dụng các chương trình khuyến mãi không thể bỏ qua của chúng tôi để đặt đơn hàng đầu tiên của bạn :)</string>
+    <string name="txt_no_historic">Bạn vẫn chưa có bất kỳ sản phẩm nào trong lịch sử của mình, hãy tận dụng các chương trình khuyến mãi không thể bỏ qua của chúng tôi và tìm hiểu các sản phẩm của chúng tôi :)</string>
+    <string name="see_more">Xem Thêm</string>
+    <string name="product_accessed_at">Sản phẩm được truy cập tại</string>
+    <string name="clear_historic">Xóa lịch sử</string>
+    <string name="really_clear_historic">Bạn có thực sự muốn xóa lịch sử của mình không?</string>
+    <string name="title_activity_follow_order" translatable="false">BẢN ĐỒ</string>
+    <string name="delivery_time">Thời gian giao hàng</string>
+    <string name="employee_warning">PetShoppe App là ứng dụng dành cho khách hàng.</string>
+    <string name="editAnimal">Thêm thú nuôi</string>
+    <string name="zero" translatable="false">0</string>
+    <string name="need_to_insert_petName">Cần nhập tên vật nuôi.</string>
+    <string name="need_to_insert_petBreed">Cần nhập giống vật nuôi!</string>
+    <string name="need_to_insert_petAge">Bạn phải nhập tuổi của thú cưng.</string>
+    <string name="need_to_insert_petWeight">Cần nhập trọng lượng của vật nuôi.</string>
+    <string name="need_to_insert_petSpecies">Nó là cần thiết để nhập các loài của vật nuôi.</string>
+    <string name="kg" translatable="false">Kg</string>
+    <string name="inappropriatePetName">Chúng tôi đã xác minh rằng tên con vật đã nhập không phù hợp, vui lòng thay đổi nó</string>
+    <string name="this_pet_is_already_registered">Con vật cưng này đã được đăng ký.</string>
+    <string name="edit_pet">Chỉnh sửa thú cưng của tôi</string>
+    <string name="want_delete_this_pet">Bạn có thực sự muốn xóa vật nuôi này không?</string>
+    <string name="no_pet_registered">Bạn thậm chí chưa có bất kỳ vật nuôi nào được đăng ký</string>
+    <string name="see_all_products">Xem tất cả các sản phẩm</string>
+    <string name="see_my_shoppingCart">Xem giỏ hàng của tôi</string>
+    <string name="schedule_a_service">Lên lịch dịch vụ</string>
+    <string name="manage_Fountain">Quản lý Fountain</string>
+    <string name="need_login_msg">Để truy cập chức năng này, bạn cần phải đăng nhập. \ NBạn có muốn đăng nhập không?</string>
+    <string name="need_register_birth">
+Để có thể đăng ký một con vật cưng, bạn phải đăng ký ngày sinh của mình, vì bạn phải đủ tuổi hợp pháp để nuôi một con vật cưng. \ NBạn có muốn đăng ký ngày sinh của mình không?</string>
+    <string name="to_register_a_pet_need_be_biggest_18">Chỉ những người trên 18 tuổi mới có thể đăng ký động vật.</string>
+    <string name="version">Version</string>
+    <string name="your_are_welcome">You\'re welcome!</string>
+    <string name="firstTime_desc">How is your first access, choose a way to continue.</string>
+    <string name="continue_without_account">TIẾP TỤC MÀ KHÔNG CÓ TÀI KHOẢN</string>
+    <string name="shortCut">Phím tắt</string>
+    <string name="search_with_dots">Search…</string>
+    <string name="highlights">Nổi Bật</string>
+    <string name="hello">Hello,</string>
+    <string name="search_cant_be_null">The survey cannot be empty, please fill in the field.</string>
+    <string name="product_not_fount">Something wrong here…\nThe informed product was not found, we apologize for the inconvenience.</string>
+    <string name="login_types">Email, cpf or username</string>
+    <string name="dont_have_an_account">Don\'t have an account? <b>Register</b></string>
+    <string name="sign_up">Sing up</string>
+    <string name="login_text">Let\'s sign you in.</string>
+    <string name="unitary">Unitary</string>
+    <string name="comfort_and_agility">Comfort and agility</string>
+    <string name="technology">Technology</string>
+    <string name="desc_fountain_technology">PalaceFountain có một máy tính siêu nhỏ có khả năng duy trì giao tiếp trực tiếp với thiết bị của bạn, gửi và nhận thông tin về cách thêm nước, với một máy bơm nước có khả năng bơm 80 đến 120 lít mỗi giờ.</string>
+    <string name="desc_fountain_comfort">Với PalaceFountain, bạn có thể bổ sung nước cho thú cưng của mình mà không cần phải rời khỏi ghế dài.</string>
+    <string name="shipping">Shipping: FREE</string>
+    <string name="your_account_was_created">Your account was created!</string>
+    <string name="open_email">Open email</string>
+    <string name="please_confirmEmail">Please confirm in the email before logging in.</string>
+    <string name="maximum_amount_reached_no_stock">Maximum quantity reached, in our stock we only have %1$s of this product.</string>
+    <string name="help">GIÚP ĐỠ</string>
+    <string name="authFailed_thisCpf">Authentication failed!\nThis CPF is already registered.</string>
+    <string name="last_order">Your last order</string>
+    <string name="problem_with_this_order">Problems with this order?</string>
+    <string name="order_was_not_delivered">Order was not delivered.</string>
+    <string name="understand_what_to_do"><i>Understand what to do</i></string>
+    <string name="know_what_to_do"><i>Know what to do</i></string>
+    <string name="my_order_went_wrong">Đơn đặt hàng của tôi đã bị sai.</string>
+    <string name="problems_with_order">Các vấn đề với đơn đặt hàng.</string>
+    <string name="tell_us"><i>Liên hệ với chúng tôi.</i></string>
+    <string name="common_questions">Câu hỏi thường gặp</string>
+    <string name="i_do_not_receive_discount_coupon">
+Tôi không nhận được phiếu giảm giá.</string>
+    <string name="i_want_to_change_account_details">Tôi muốn thay đổi chi tiết tài khoản.</string>
+    <string name="i_want_to_work_at_palace">Tôi muốn làm việc tại Pashopee.</string>
+    <string name="i_want_to_be_a_supplier">Tôi muốn trở thành một nhà cung cấp.</string>
+    <string name="category">Danh mục</string>
+    <string name="account">Tài khoản</string>
+    <string name="all_about_your_account">Tất cả về tài khoản của bạn.</string>
+    <string name="about_palace">Về cung điện</string>
+    <string name="a_little_bit_of_who_we_are">Một chút về chúng tôi là ai.</string>
+    <string name="policy_and_terms">Chính sách và Điều khoản</string>
+    <string name="check_out_our_terms_of_use">Kiểm tra các điều khoản sử dụng của chúng tôi.</string>
+    <string name="about_Palace_App">Giới thiệu về ứng dụng PetShoppe</string>
+    <string name="a_little_about_the_app">A little about the app</string>
+    <string name="my_account_has_been_hacked">My account has been hacked</string>
+    <string name="i_want_to_change_account_data">I want to change account data</string>
+    <string name="i_want_to_delete_my_account">I want to delete my account</string>
+    <string name="i_want_to_change_my_password">I want to change my password</string>
+    <string name="security_tips">Mẹo bảo mật</string>
+    <string name="desc_do_not_receive_discount">Our coupons are shipped on holidays or on special occasions like by example in your first order.</string>
+    <string name="desc_my_account_has_been_hacked">If this has happened, don\'t worry: the attacker doesn\'t have access to your payment data, because it\'s only saved to the device you registered. We recommend changing your password.</string>
+    <string name="anonymous_user">Người dùng ẩn danh</string>
+    <string name="desc_i_want_to_change_my_password">To change your password, simply log out of your account, go to the login screen and click on the option \"I forgot my password\"</string>
+    <string name="desc_security_tips">• PalacePetz cares a lot about your security so here are some tips, PalacePetz will never ask for your personal information like cpf, password etc…\n\n• <b>Attention with fake email and SMS</b> - Check if the email sender is palacepetz.shop@gmail.com before replying to any contact and do not share your details via SMS or Whatsapp;\n\n<b>• Keep your app up to date:</b> The more recent your update, the more safe your device is. Lack of updates opens security holes that can be used by malicious people.</string>
+    <string name="desc_delete_account">You can delete your PalacePetz account at any time. If you change your mind, you might not be able to get it back.\n\nPlease contact an employee so we can delete your account.</string>
+    <string name="test_water_pump">Test water pump</string>
+    <string name="cancel_water">Cancel Water</string>
+    <string name="who_are_we">Who are we?</string>
+    <string name="desc_who_are_we">PalacePetz was created by love the owners have by animals. aiming for a good treatment to the pets, not just with products, but assisting in the beware of appointments veterinary.</string>
+    <string name="desc_policy_and_terms">The protection of your data is very important to Palace.\nWe respect your privacy in our mission to provide an even better service!\n\n• The data you register on our platforms <b>is handled securely.</b>\n\n• <b>We limit the processing</b> of data to their proper purposes and in <b>accordance with the law.</b>\n\n• You can answer your questions and request information at any time through the Help tab on our platforms.</string>
+    <string name="waiting_for_be_approved">your order is waiting for be approved</string>
+    <string name="we_are_preparing_your_order">we are preparing your order</string>
+    <string name="your_order_is_on_its_way">your order is on its way</string>
+    <string name="your_order_has_been_delivered">your order has been delivered</string>
+    <string name="your_order_has_already_been_completed">your order has already been completed</string>
+    <string name="desc_work_at_palace">Unfortunately at the moment we have no vacancies available, but if you want to be a palace petz collaborator in the future, you can send your resume to this email palacepetz.shop@gmail.com and as soon as new vacancies are available we will contact you</string>
+    <string name="desc_be_a_supplier">At the moment our stock is full and we have no vacancies for new suppliers, but you can offer your company\'s services by sending an e-mail to palacepetz.shop@gmail.com and signing if there is a need for new or more products one of ours managers can contact your company.</string>
+    <string name="debit">1 -
+Ghi nợ</string>
+    <string name="credit">2 - Tín dụng</string>
+    <string name="money">3 - Tiền mặt</string>
+    <string name="pet_is_not_selected">To make an appointment it is necessary to select a pet.</string>
+    <string name="veterinary_is_not_selected">To make an appointment it is necessary to select a veterinarian.</string>
+    <string name="time_is_not_selected">To make an appointment it is necessary to select a time.</string>
+    <string name="date_is_not_selected">To make an appointment, you must select a date.</string>
+    <string name="your_appointment_was_successful">Your appointment was successful.\nAny questions please contact us</string>
+    <string name="scheduled_services">Dịch vụ đã lên lịch</string>
+    <string name="animal">Vật nuôi</string>
+    <string name="veterinary">Thú y</string>
+    <string name="time">Thời gian</string>
+    <string name="date">Ngày</string>
+    <string name="all_appointments">Tất cả các cuộc hẹn
+</string>
+    <string name="really_want_cancel_this_schedule">Do you really want to cancel this schedule?</string>
+    <string name="cancel_schedule">Hủy bỏ lịch biểu</string>
+    <string name="reason_for_cancellation">What is the reason for the cancellation?</string>
+    <string name="i_will_be_unavailable_for_the_day">I will be unavailable for the day</string>
+    <string name="other_reasons">Các lý do khác</string>
+    <string name="describe_the_reason_for_cancellation">Describe the reason for cancellation</string>
+    <string name="appointment_canceled_successfully">Appointment canceled successfully</string>
+    <string name="i_cant_go_at_the_scheduled_time">I can\'t go at the scheduled time</string>
+    <string name="delivery_is_not_selected">Delivery method has not been selected</string>
+    <string name="fixed_price_consultation">Fixed Price: 90.00</string>
+    <string name="fixed_price_bath">Fixed Price: 60.00</string>
+    <string name="txt_desc_account_disable">Sorry for the inconvenience but your account is disabled, please contact our support to understand why</string>
+    <string name="delivered">Đã giao hàng</string>
+    <string name="txt_desc_developers">Xin chào, ứng dụng này được phát triển cho mục đích hoàn thành đồ án tốt nghiệp, vì vậy thông tin trình bày trong ứng dụng này là không có thật, chúng tôi yêu cầu bạn không nhập thông tin thực như số thẻ tín dụng vì các mục trong ứng dụng này chỉ mang tính chất minh họa, để biết thêm thông tin nhấp vào nút \ "Nhà phát triển \".</string>
+    <string name="developers">Nhà phát triển</string>
+    <string name="kaua_vitorio" translatable="false">Kauã Vitório</string>
+    <string name="kaua_developer">Mobile | Android Developer</string>
+    <string name="view_portfolio">View portfolio</string>
+    <string name="notice_payment_at_the_time">Notice, the payment for all services is made at the time of the service, we will not request any payment before.</string>
+    <string name="desc_pedro">System, Infrastructure and Database Analyst</string>
+    <string name="scan_the_qr_code">Quét mã QR</string>
+    <string name="desc_no_qr_not_palace">
+Mã QR này không phải là mã sản phẩm PetShoppe.</string>
+    <string name="no_results">No results</string>
 </resources>

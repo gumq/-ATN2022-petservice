@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="4dp"
+    android:scrollbarThumbVertical="@drawable/custom_scroll_style_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <!-- Container Search -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp">
+
+            <!-- Edit Search -->
+            <AutoCompleteTextView
+                android:id="@+id/edit_Search_Main"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:hint="@string/search_with_dots"
+                android:scrollbarSize="4dp"
+                android:scrollbarThumbVertical="@drawable/custom_scroll_style_vertical"
+                android:drawableEnd="@drawable/ic_search"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="Autofill" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Text ShortCut -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shortCut"
+            android:textColor="@color/black"
+            android:layout_marginStart="32dp"
+            android:textSize="20sp"/>
+
+        <!-- ShortCut Container -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scrollbarSize="1dp"
+            android:scrollbarThumbHorizontal="@drawable/custom_scroll_style_horizontal"
+            tools:ignore="ScrollViewCount">
+
+            <!-- Container -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+<!-- shutcut pet -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_pet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:minWidth="150dp"
+                    android:minHeight="110dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!-- Container Main -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="135dp"
+                        android:layout_height="101dp"
+                        android:background="@drawable/bg_shortcuts_main"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <!-- Img ShortCut -->
+                        <ImageView
+                            android:id="@+id/img_pet"
+                            android:layout_width="41dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ic_consultation"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <!-- Btn Text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="THÔNG TIN THÚ CƯNG"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/img_pet" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- ShortCut Services -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_services_shortCut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="110dp"
+                    android:minWidth="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_pet"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!-- Container Main -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="135dp"
+                        android:layout_height="101dp"
+                        android:background="@drawable/bg_shortcuts_main"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <!-- Img ShortCut -->
+                        <ImageView
+                            android:id="@+id/img_services_shortcut_main"
+                            android:layout_width="41dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ic_consultation"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <!-- Btn Text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/services"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/img_services_shortcut_main" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- ShortCut Products -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_allProducts_shortCut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="110dp"
+                    android:minWidth="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_services_shortCut"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!-- Container Main -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="135dp"
+                        android:layout_height="101dp"
+                        android:background="@drawable/bg_shortcuts_main"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <!-- Img ShortCut -->
+                        <ImageView
+                            android:id="@+id/img_products_shortcut_main"
+                            android:layout_width="41dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/products_sheetmenu"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Btn Text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/products"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/img_products_shortcut_main" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- ShortCut CARDS -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_cards_shortCut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="110dp"
+                    android:minWidth="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_allProducts_shortCut"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!-- Container Main -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="135dp"
+                        android:layout_height="101dp"
+                        android:background="@drawable/bg_shortcuts_main"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <!-- Img ShortCut -->
+                        <ImageView
+                            android:id="@+id/img_cards_shortcut_main"
+                            android:layout_width="41dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/cards_icon"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <!-- Btn Text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/myCards"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/img_cards_shortcut_main" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                <!-- ShortCut MY ORDERS -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_myOrders_shortCut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="110dp"
+                    android:minWidth="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_cards_shortCut"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!-- Container Main -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="132dp"
+                        android:layout_height="105dp"
+                        android:background="@drawable/bg_shortcuts_main"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <!-- Img ShortCut -->
+                        <ImageView
+                            android:id="@+id/img_orders_shortcut_main"
+                            android:layout_width="41dp"
+                            android:layout_height="41dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/notes_sheetmenu"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <!-- Btn Text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/myOrders"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/img_orders_shortcut_main" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+        <!-- Text Highlights -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/highlights"
+            android:textColor="@color/black"
+            android:layout_marginStart="32dp"
+            android:textSize="20sp"/>
+
+        <!-- Anim Loading Popular Product -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadingPopularProducts"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:layout_marginTop="10dp"
+            app:lottie_rawRes="@raw/astronaut_dog"/>
+
+        <!-- Recycler Popular Products -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerPopularProducts"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

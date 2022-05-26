@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.PetDetailActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="15dp"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_hinh_detail"
+                android:layout_width="331dp"
+                android:layout_height="240dp"
+                android:src="@drawable/alaska_detail"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_name_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chó Alaska"
+                        android:textSize="24dp"
+                        android:textColor="#E91E63"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"/>
+                    <TextView
+                        android:id="@+id/tv_gia_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30.000.000đ"
+                        android:textSize="18dp"
+                        android:textColor="#FF4343"/>
+                </LinearLayout>
+                <RatingBar
+                    android:id="@+id/ratingBar2"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginLeft="90dp"
+                    android:progressTint="#ffde30"
+
+                    android:numStars="5"
+                    android:rating="4"
+                    android:scaleX="2"
+                    android:scaleY="2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_chitiet_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Chó Alaska đang là loại chó được ưa chuộng nhất tại Việt Nam hiện nay. Với ngoại hình oai vệ, bộ lông tuyệt đẹp, rất tình cảm và thân thiện. Chó Alaska dễ dàng “đốn tim” bạn ngay từ lần đầu gặp gỡ."
+                android:textSize="14dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btn_botsoluong"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+                <TextView
+                    android:id="@+id/textview_soluong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="20dp"/>
+                <Button
+                    android:id="@+id/btn_themsoluong"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_add_cart"
+                android:layout_width="331dp"
+                android:layout_height="50dp"
+                android:text="Add to cart"
+                android:background="@drawable/device_presentation_button_border"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</ScrollView>
