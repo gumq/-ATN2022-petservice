@@ -3,12 +3,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
-/**
- *  Copyright (c) 2021 Kauã Vitório
- *  Official repository https://github.com/Kauavitorio/PalacePetz
- *  Responsible developer: https://github.com/Kauavitorio
- *  @author Kaua Vitorio
- **/
+
 
 public abstract class MaskEditUtil {
 
@@ -24,13 +19,7 @@ public abstract class MaskEditUtil {
     public static final String FORMAT_DATAVALI = "##/##";
     public static final String FORMAT_WEIGHT = "## KG";
 
-    /**
-     * Método que deve ser chamado para realizar a formatação
-     *
-     * @param ediTxt
-     * @param mask
-     * @return
-     */
+
     public static TextWatcher mask(final EditText ediTxt, final String mask) {
         return new TextWatcher() {
             boolean isUpdating;

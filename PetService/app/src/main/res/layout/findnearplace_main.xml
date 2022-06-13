@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Data.User.MainFindnearplace">
+
+   <fragment
+       android:id="@+id/details_fragment"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       class="co.kaua.palacepetz.Data.User.MapsFragment">
+   </fragment>
+<!--    tools:openDrawer="start">-->
+<!--    android:id="@+id/drawer_layout">-->
+
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/nav_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:headerLayout="@layout/drawer_header"-->
+<!--        android:theme="@style/navigationTheme"-->
+<!--        app:menu="@menu/main_menu"-->
+<!--        android:layout_gravity="start"/>-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/contentLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--&lt;!&ndash;        <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/relativeLayout"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:elevation="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintTop_toTopOf="parent">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:background="?attr/selectableItemBackground"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/menu_icon"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_centerVertical="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:tint="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/menu_icon" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                style="@style/selectedBackground"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_alignParentEnd="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_centerVertical="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:background="@color/pink"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:onClick="addUser"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:padding="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:tint="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/add_icon"&ndash;&gt;-->
+<!--&lt;!&ndash;                tools:ignore="UsingOnClickInXml" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/app_name"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="@string/app_name"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="24sp" />&ndash;&gt;-->
+<!--&lt;!&ndash;        </RelativeLayout>&ndash;&gt;-->
+
+<!--        <FrameLayout-->
+<!--            android:id="@+id/frag_container"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"></FrameLayout>-->
+<!--&lt;!&ndash;            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />&ndash;&gt;-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

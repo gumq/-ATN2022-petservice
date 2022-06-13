@@ -35,12 +35,6 @@ import co.kaua.palacepetz.R;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- *  Copyright (c) 2021 Kauã Vitório
- *  Official repository https://github.com/Kauavitorio/PalacePetz
- *  Responsible developer: https://github.com/Kauavitorio
- *  @author Kaua Vitorio
- **/
 
 @SuppressWarnings({"ConstantConditions", "StaticFieldLeak", "unchecked"})
 public class MainFragment extends Fragment {

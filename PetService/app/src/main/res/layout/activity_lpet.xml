@@ -43,6 +43,7 @@
                             <RelativeLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+
                                 android:orientation="vertical">
 
                                 <ImageButton
@@ -50,8 +51,9 @@
                                     android:layout_width="87dp"
                                     android:layout_height="90dp"
                                     android:background="@drawable/dog"
-                                    android:backgroundTint="@color/black"
-                                    android:src="@drawable/device_presentation_button_border" />
+                                    android:src="@drawable/device_presentation_button_border"
+                                    android:backgroundTint="@color/gradient_start_color"
+                                  />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -69,6 +71,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="15dp"
+
                         android:layout_marginLeft="7dp"
                         app:cardElevation="15dp">
                         <LinearLayout
@@ -84,7 +87,7 @@
                                     android:layout_width="87dp"
                                     android:layout_height="90dp"
                                     android:background="@drawable/cat"
-                                    android:backgroundTint="@color/black"
+                                    android:backgroundTint="@color/gradient_start_color"
                                     android:src="@drawable/device_presentation_button_border" />
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -117,7 +120,9 @@
                                     android:id="@+id/imgbtnThucAn"
                                     android:layout_width="87dp"
                                     android:layout_height="90dp"
-                                    android:backgroundTint="@color/black"
+                                    android:background="@drawable/bjrd"
+                                    android:backgroundTint="@color/gradient_start_color"
+                                    android:scaleType="centerInside"
                                     android:src="@drawable/device_presentation_button_border" />
 
                                 <TextView
@@ -145,13 +150,15 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
+
                                 <ImageButton
-                                    android:id="@+id/imgbtnKhac"
-                                    android:background="@drawable/more"
+                                    android:id="@+id/imgbtnback"
                                     android:layout_width="87dp"
                                     android:layout_height="90dp"
-                                    android:src="@drawable/device_presentation_button_border"
-                                    android:backgroundTint="@color/black"/>
+                                    android:background="@drawable/backleft"
+                                    android:backgroundTint="@color/gradient_start_color"
+                                    android:src="@drawable/device_presentation_button_border"></ImageButton>
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -159,7 +166,7 @@
                                     android:layout_centerHorizontal="true"
                                     android:fontFamily="serif"
                                     android:paddingBottom="4dp"
-                                    android:text="MORE"
+                                    android:text="BACK"
                                     android:textSize="18dp" />
                             </RelativeLayout>
                         </LinearLayout>
@@ -179,7 +186,8 @@
                 android:scrollbars="vertical"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:paddingBottom="20dp"/>
+                android:paddingBottom="20dp">
+            </ListView>
 <!--            <ImageView-->
 <!--                android:background="@drawable/bgchamsoc"-->
 <!--                android:layout_width="match_parent"-->

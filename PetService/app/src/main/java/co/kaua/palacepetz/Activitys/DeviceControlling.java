@@ -26,12 +26,7 @@ import com.airbnb.lottie.LottieAnimationView;
 import co.kaua.palacepetz.Adapters.LoadingDialog;
 import co.kaua.palacepetz.R;
 
-/**
- *  Copyright (c) 2021 Kauã Vitório
- *  Official repository https://github.com/Kauavitorio/PalacePetz
- *  Responsible developer: https://github.com/Kauavitorio
- * @author Kaua Vitorio
- **/
+
 
 @SuppressWarnings("deprecation")
 public class DeviceControlling extends AppCompatActivity {
@@ -195,7 +190,7 @@ public class DeviceControlling extends AppCompatActivity {
             String VoiceResult = (String) matches.get(0);
             Toast.makeText(this, VoiceResult, Toast.LENGTH_SHORT).show();
             if (VoiceResult.equals("put water") || VoiceResult.equals("Put Water") || VoiceResult.equals("Coloque Água") || VoiceResult.equals("coloque água")
-                    || VoiceResult.equals("colocar água") || VoiceResult.equals("colocar agua")){
+                    || VoiceResult.equals("ĐẶT NƯỚC") || VoiceResult.equals("Đặt Nước")){
                 try {
                     mBTSocket.getOutputStream().write(passPutWater.getBytes());
                 } catch (IOException e) {

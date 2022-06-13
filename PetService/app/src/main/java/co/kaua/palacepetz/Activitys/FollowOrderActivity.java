@@ -28,12 +28,6 @@ import co.kaua.palacepetz.Methods.ToastHelper;
 import co.kaua.palacepetz.R;
 import co.kaua.palacepetz.databinding.ActivityFollowOrderBinding;
 
-/**
- *  Copyright (c) 2021 Kauã Vitório
- *  Official repository https://github.com/Kauavitorio/PalacePetz
- *  Responsible developer: https://github.com/Kauavitorio
- *  @author Kaua Vitorio
- **/
 
 @SuppressWarnings("ALL")
 public class FollowOrderActivity extends FragmentActivity implements OnMapReadyCallback {
@@ -101,19 +95,19 @@ public class FollowOrderActivity extends FragmentActivity implements OnMapReadyC
 
     private void changeStatusBar() {
         switch (status) {
-            case "Aguardando Aprovação":
+            case "Chờ phê duyệt":
                 _progress_state01.setProgress(100);
                 break;
-            case "Preparando Produto":
+            case "Chuẩn bị sản phẩm\n":
                 _progress_state01.setProgress(100);
                 _progress_state02.setProgress(100);
                 break;
-            case "A caminho":
+            case "Trên đường của tôi":
                 _progress_state01.setProgress(100);
                 _progress_state02.setProgress(100);
                 _progress_state03.setProgress(100);
                 break;
-            case "Entregue":
+            case "Đã giao hàng":
                 _progress_state01.setProgress(100);
                 _progress_state02.setProgress(100);
                 _progress_state03.setProgress(100);
@@ -121,7 +115,7 @@ public class FollowOrderActivity extends FragmentActivity implements OnMapReadyC
                 _progress_state05.setProgress(100);
                 txt_deliveryForecast.setText(getString(R.string.delivered));
                 break;
-            case "Concluído":
+            case "Kết quả":
                 _progress_state01.setProgress(100);
                 _progress_state02.setProgress(100);
                 _progress_state03.setProgress(100);

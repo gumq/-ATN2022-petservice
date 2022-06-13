@@ -24,6 +24,8 @@
         app:lottie_rawRes="@raw/presto_cheers" />
 
     <!-- Main Text -->
+
+    <!-- Btn OK -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +36,6 @@
         android:textColor="@color/black"
         android:textSize="18sp" />
 
-    <!-- Btn OK -->
     <androidx.cardview.widget.CardView
         android:id="@+id/btnOk_OrderConfirmation"
         android:layout_width="match_parent"

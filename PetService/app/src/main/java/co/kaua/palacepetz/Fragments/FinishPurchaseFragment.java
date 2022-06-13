@@ -141,8 +141,8 @@ public class FinishPurchaseFragment extends Fragment implements IOnBackPressed {
                     loadingDialog = new LoadingDialog(getActivity());
                     loadingDialog.startLoading();
                     DtoPurchase purchaseInfo = new DtoPurchase(_IdUser, card_id,
-                            txt_Discounts_FinishPurchase.getText().toString().replace(getString(R.string.discounts) + ": -R$", ""),
-                            Used_Coupon,"R$" + SubTotal, "R$" +  txt_total_FinishPurchase.getText().toString().replace(getString(R.string.total) + ": R$", ""));
+                            txt_Discounts_FinishPurchase.getText().toString().replace(getString(R.string.discounts) + ": -VNĐ", ""),
+                            Used_Coupon,"VNĐ" + SubTotal, "VNĐ" +  txt_total_FinishPurchase.getText().toString().replace(getString(R.string.total) + ": R$", ""));
                     PurchaseServices services = retrofitOrder.create(PurchaseServices.class);
                     Call<DtoPurchase> call = services.finish_order(purchaseInfo);
                     call.enqueue(new Callback<DtoPurchase>() {
@@ -299,11 +299,11 @@ public class FinishPurchaseFragment extends Fragment implements IOnBackPressed {
     private void loadText() {
         double percentage = Discounts / 100.0;
         double valor_final = SubTotal - (percentage * SubTotal);
-        NumberFormat numberFormat = NumberFormat.getInstance(new Locale("pt", "BR"));
+        NumberFormat numberFormat = NumberFormat.getInstance();
         numberFormat.setMaximumFractionDigits(2);
-        txt_SubTotal_FinishPurchase.setText(getString(R.string.subTotal) + ": R$" + SubTotal);
-        txt_total_FinishPurchase.setText(getString(R.string.total) + ": R$"  + numberFormat.format(valor_final));
-        txt_Discounts_FinishPurchase.setText(getString(R.string.discounts) + ": -R$" + numberFormat.format((percentage * SubTotal)));
+        txt_SubTotal_FinishPurchase.setText(getString(R.string.subTotal) + ": VNĐ" + SubTotal);
+        txt_total_FinishPurchase.setText(getString(R.string.total) + ": VNĐ"  + numberFormat.format(valor_final));
+        txt_Discounts_FinishPurchase.setText(getString(R.string.discounts) + ": -VNĐ" + numberFormat.format((percentage * SubTotal)));
     }
 
     private void Ids() {

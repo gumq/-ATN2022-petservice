@@ -11,12 +11,7 @@ import android.preference.PreferenceManager;
 
 import java.util.Map;
 
-/**
- *  Copyright (c) 2021 Kauã Vitório
- *  Official repository https://github.com/Kauavitorio/PalacePetz
- *  Responsible developer: https://github.com/Kauavitorio
- * @author Kaua Vitorio
- **/
+
 
 @SuppressWarnings("deprecation")
 public class PreferencesActivity extends PreferenceActivity implements OnSharedPreferenceChangeListener {

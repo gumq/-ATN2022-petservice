@@ -42,15 +42,15 @@ public class PetAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        view = inflater.inflate(R.layout.cartlist,null);
-        TextView tv_ten = (TextView) view.findViewById(R.id.tv_name_cartlist);
-        TextView tv_gia = (TextView)view.findViewById(R.id.tv_gia_cartlist);
-        TextView tv_soLuong = (TextView)view.findViewById(R.id.tv_soluong_cartlist);
+//        view = inflater.inflate(R.layout.cartlist,null);
+//        TextView tv_ten = (TextView) view.findViewById(R.id.tv_name_cartlist);
+//        TextView tv_gia = (TextView)view.findViewById(R.id.tv_gia_cartlist);
+//        TextView tv_soLuong = (TextView)view.findViewById(R.id.tv_soluong_cartlist);
 
         Pet pet = petList.get(position);
-        tv_ten.setText(pet.getName());
-        tv_gia.setText(pet.getGia());
-        tv_soLuong.setText(pet.getSoLuong());
+//        tv_ten.setText(pet.getName());
+//        tv_gia.setText(pet.getGia());
+//        tv_soLuong.setText(pet.getSoLuong());
 
         return view;
     }

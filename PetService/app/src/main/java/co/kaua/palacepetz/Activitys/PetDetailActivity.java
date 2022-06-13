@@ -11,6 +11,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import co.kaua.palacepetz.Data.model.Pet;
 
 import co.kaua.palacepetz.Data.DatabaseHelper;
@@ -18,8 +20,8 @@ import co.kaua.palacepetz.R;
 
 
 public class PetDetailActivity extends AppCompatActivity {
-    Button btn_addCart, btn_themSoLuong, btn_botSoLuong;
-    TextView tv_name, tv_gia, tv_soluong, tv_chitiet;
+    FloatingActionButton backbutoon, btn_botSoLuong;
+    TextView tv_name, tv_gia, tv_chitiet;
     ImageView img_hinh;
     DatabaseHelper db;
     int soLuong;
@@ -29,16 +31,16 @@ public class PetDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pet_detail);
-        setTitle("Detail");
+//        setTitle("Detail");
 
         img_hinh =(ImageView)findViewById(R.id.img_hinh_detail);
         tv_gia = (TextView)findViewById(R.id.tv_gia_detail);
         tv_name = (TextView)findViewById(R.id.tv_name_detail);
-        tv_soluong = (TextView)findViewById(R.id.textview_soluong);
+      ///  tv_soluong = (TextView)findViewById(R.id.textview_soluong);
         tv_chitiet = (TextView)findViewById(R.id.tv_chitiet_detail);
-        btn_themSoLuong = (Button)findViewById(R.id.btn_themsoluong);
-        btn_botSoLuong = (Button)findViewById(R.id.btn_botsoluong);
-        btn_addCart = (Button)findViewById(R.id.btn_add_cart);
+       backbutoon = findViewById(R.id.backbutoon);
+       // btn_botSoLuong = (Button)findViewById(R.id.btn_botsoluong);
+      //  btn_addCart = (Button)findViewById(R.id.btn_add_cart);
         db = new DatabaseHelper(this);
 
         String name = getIntent().getStringExtra("name");
@@ -68,66 +70,21 @@ public class PetDetailActivity extends AppCompatActivity {
                 "\n" +
                 "- Không cho ăn đồ sống sẽ ảnh hưởng đến tiêu hóa");
 
-        btn_addCart.setOnClickListener(new View.OnClickListener() {
+
+
+
+        backbutoon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String name = tv_name.getText().toString();
-                Pet pet = new Pet();
-                Boolean checkCart= db.checkCart(name);
-                if (checkCart==true)
-                {
-                    pet.setGia(tv_gia.getText().toString());
-                    pet.setSoLuong(tv_soluong.getText().toString());
-                    if (db.updateAuthor(pet,name)>0){
-                        Toast.makeText(getApplicationContext(), "Đã thêm vào giỏ hàng",Toast.LENGTH_SHORT).show();
-                    }
-                    else
-                        Toast.makeText(getApplicationContext(), "Thêm giỏ hàng không thành công",Toast.LENGTH_SHORT).show();
-                }
-                else{
+                onBackPressed();
+                overridePendingTransition(R.anim.move_to_right_popular,R.anim.move_to_left);
+                onEnterAnimationComplete();
 
-                    pet.setName(name);
-                    pet.setGia(tv_gia.getText().toString());
-                    pet.setSoLuong(tv_soluong.getText().toString());
-                    if (db.insertAuthor(pet)>0){
-                        Toast.makeText(getApplicationContext(), "Đã thêm vào giỏ hàng",Toast.LENGTH_SHORT).show();
-                    }
-                    else
-                        Toast.makeText(getApplicationContext(), "Thêm giỏ hàng không thành công",Toast.LENGTH_SHORT).show();
-                }
-
-                finish();
             }
         });
-
-        btn_themSoLuong.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                soLuong++;
-                displaySoLuong();
-            }
-
-
-        });
-        btn_botSoLuong.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (soLuong == 0) {
-                    Toast.makeText(PetDetailActivity.this, "Không thể bé hơn 0",Toast.LENGTH_SHORT).show();
-                }else {
-                    soLuong--;
-                    displaySoLuong();
-                }
-            }
-        });
-
     }
 
-
-    private void displaySoLuong() {
-        tv_soluong.setText(String.valueOf(soLuong));
-    }
 
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {

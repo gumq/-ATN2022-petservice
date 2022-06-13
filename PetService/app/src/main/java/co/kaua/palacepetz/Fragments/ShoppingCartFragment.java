@@ -97,7 +97,7 @@ public class ShoppingCartFragment extends Fragment implements IOnBackPressed {
             Bundle args = new Bundle();
             args.putString("email_user", _Email);
             args.putInt("id_user", _IdUser);
-            String startValue = txt_total_shoppingCart.getText().toString().replace("Total: R$ ", "").replace(" ", "");
+            String startValue = txt_total_shoppingCart.getText().toString().replace("Tổng Tiền: VNĐ ", "").replace(" ", "");
             while (startValue.contains(".")) {
                 startValue = startValue.substring(0,
                         startValue.indexOf(".")) +

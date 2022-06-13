@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="co.kaua.palacepetz">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -24,6 +23,14 @@
         <activity android:name=".Activitys.Services.ScheduledServicesActivity" />
         <activity android:name=".Activitys.Help.HelpActivity" />
         <activity android:name=".Activitys.IntroActivity" />
+        <activity android:name=".Data.User.MainFindnearplace"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Methods.CaptureAct"
             android:screenOrientation="fullSensor"
@@ -33,20 +40,21 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
         <activity
             android:name=".Activitys.FollowOrderActivity"
             android:label="@string/title_activity_follow_order" />
         <activity android:name=".Activitys.Pets.RegisterPetActivity" />
         <activity android:name=".Activitys.Pets.AllPetsActivity" />
         <activity android:name=".Activitys.LpetActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            android:theme="@style/Theme.PalacePetz"
            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".Activitys.PetDetailActivity"
+            android:theme="@style/Theme.PalacePetz"
+            >
         </activity>
 
         <meta-data

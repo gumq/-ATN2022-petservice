@@ -15,12 +15,7 @@ import java.util.List;
 import co.kaua.palacepetz.Data.DevicePresentation.DevicePresentation;
 import co.kaua.palacepetz.R;
 
-/**
- *  Copyright (c) 2021 Kauã Vitório
- *  Official repository https://github.com/Kauavitorio/PalacePetz
- *  Responsible developer: https://github.com/Kauavitorio
- * @author Kaua Vitorio
- **/
+
 
 public class DeviceSliderViewPagerAdapter extends PagerAdapter {
 

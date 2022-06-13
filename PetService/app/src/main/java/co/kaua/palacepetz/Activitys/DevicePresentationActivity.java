@@ -22,12 +22,7 @@ import co.kaua.palacepetz.Adapters.DeviceSliderViewPagerAdapter;
 import co.kaua.palacepetz.Data.DevicePresentation.DevicePresentation;
 import co.kaua.palacepetz.R;
 
-/**
- *  Copyright (c) 2021 Kauã Vitório
- *  Official repository https://github.com/Kauavitorio/PalacePetz
- *  Responsible developer: https://github.com/Kauavitorio
- * @author Kaua Vitorio
- **/
+
 
 public class DevicePresentationActivity extends AppCompatActivity {
     private ViewPager screenPager;
@@ -74,7 +69,7 @@ public class DevicePresentationActivity extends AppCompatActivity {
 
         // fill list screen
         final List<DevicePresentation> mList = new ArrayList<>();
-        mList.add(new DevicePresentation("Palace Fountain", getString(R.string.text_one_devicePresentation) ,R.drawable.device_presentation_palace_fountain));
+        mList.add(new DevicePresentation("KHU VIP", getString(R.string.text_one_devicePresentation) ,R.drawable.device_presentation_palace_fountain));
         mList.add(new DevicePresentation(getString(R.string.comfort_and_agility),getString(R.string.desc_fountain_comfort),R.drawable.device_presentation_dog_bread));
         mList.add(new DevicePresentation(getString(R.string.technology),  getString(R.string.desc_fountain_technology), R.drawable.device_presentation_with_chicken));
 

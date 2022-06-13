@@ -33,12 +33,7 @@ import co.kaua.palacepetz.Adapters.LoadingDialog;
 import co.kaua.palacepetz.Iot.PreferencesActivity;
 import co.kaua.palacepetz.R;
 
-/**
- *  Copyright (c) 2021 Kauã Vitório
- *  Official repository https://github.com/Kauavitorio/PalacePetz
- *  Responsible developer: https://github.com/Kauavitorio
- *  @author Kaua Vitorio
- **/
+
 
 @SuppressWarnings("deprecation")
 public class DevicePairActivity extends AppCompatActivity {
@@ -185,13 +180,7 @@ public class DevicePairActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * Custom adapter to show the current devices in the list. This is a bit of an overkill for this
-     * project, but I figured it would be good learning
-     * Most of the code is lifted from somewhere but I can't find the link anymore
-     *
-     * @author Kauã Vitorio
-     */
+
     public static class MyAdapter extends ArrayAdapter<BluetoothDevice> {
         private int selectedIndex;
         private final Context context;

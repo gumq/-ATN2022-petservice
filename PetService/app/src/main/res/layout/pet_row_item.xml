@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/custom_button"
     android:orientation="vertical"
     android:layout_margin="20dp">
-
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardCornerRadius="25dp"
-        app:cardElevation="15dp"
-
-        android:layout_marginBottom="20dp">
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#f0f6fe"
+        app:cardElevation="45dp"
+       >
         <LinearLayout
+
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="160dp"
             android:orientation="horizontal"
             >
 
@@ -31,7 +32,7 @@
             <LinearLayout
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="#f0f6fe"
                 android:orientation="vertical">
 
                 <TextView
@@ -49,6 +50,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textSize="12sp"
                     android:text="30.000.000đ"
                     android:textColor="#ff2626"
                     android:textStyle="bold" />
@@ -57,8 +59,11 @@
                     android:id="@+id/textview_chitiet_list"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:textSize="11sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:layout_marginTop="7dp"
                     android:text="Alaska malamute hiện đang là một trong những giống chó cảnh được ưa chuộng nhất tại Việt Nam hiện nay."
                     android:textColor="@color/black" />
             </LinearLayout>

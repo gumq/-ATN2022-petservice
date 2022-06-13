@@ -60,13 +60,6 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- *  Copyright (c) 2021 Kauã Vitório
- *  Official repository https://github.com/Kauavitorio/PalacePetz
- *  Responsible developer: https://github.com/Kauavitorio
- *  @author Kaua Vitorio
- **/
-
 @SuppressWarnings({"FieldCanBeLocal", "StaticFieldLeak"})
 public class MainActivity extends AppCompatActivity {
 

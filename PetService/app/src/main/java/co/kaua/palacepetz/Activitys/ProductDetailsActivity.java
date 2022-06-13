@@ -209,7 +209,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
     private void loadProdsTexts() {
         txt_product_name.setText(nm_product);
         txt_desc_prod.setText(description);
-        txt_price_product.setText("R$ " + unit_prod_price);
+        txt_price_product.setText("VNĐ " + unit_prod_price);
         txtQt_prod.setText(qt_prod + "");
         Picasso.get().load(image_prod).into(imgProductDetails);
     }
@@ -230,7 +230,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void setNewPrice(NumberFormat numberFormat) {
         full_prod_price = unit_prod_price * qt_prod;
-        txt_price_product.setText("R$ " + numberFormat.format(full_prod_price));
+        txt_price_product.setText("VNĐ " + numberFormat.format(full_prod_price));
     }
 
     @SuppressLint("SetTextI18n")
