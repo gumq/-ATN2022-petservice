@@ -83,13 +83,13 @@ public class ShoppingCart_Adapter extends RecyclerView.Adapter<ShoppingCart_Adap
 
         Picasso.get().load(dtoProductsArrayList.get(position).getImage_prod()).into(holder.img_prod_shoppingCart);
         holder.txt_name_prod_shoppingCart.setText(dtoProductsArrayList.get(position).getNm_product());
-        NumberFormat numberFormat = NumberFormat.getInstance(new Locale("pt", "BR"));
+        NumberFormat numberFormat = NumberFormat.getInstance();
         numberFormat.setMaximumFractionDigits(2);
         holder.txtQt_prod_shoppingCart_ad.setText((dtoProductsArrayList.get(position).getProduct_amount() < 10 ? "0" : "") + dtoProductsArrayList.get(position).getProduct_amount() + "");
         productAmount = dtoProductsArrayList.get(position).getProduct_amount();
-        holder.txt_unit_price_prod_shoppingCart.setText("R$ " + dtoProductsArrayList.get(position).getProduct_price()
+        holder.txt_unit_price_prod_shoppingCart.setText("đ " + dtoProductsArrayList.get(position).getProduct_price()
                 + " (" + context.getString(R.string.unitary) + ")");
-        holder.txt_full_price_prod_shoppingCart.setText("R$ " + numberFormat.format(Float.parseFloat(dtoProductsArrayList.get(position).getTotalPrice())));
+        holder.txt_full_price_prod_shoppingCart.setText("đ " + numberFormat.format(Float.parseFloat(dtoProductsArrayList.get(position).getTotalPrice())));
         holder.card_adapter_shoppingCart.setElevation(15);
         UpdatePriceTexts(numberFormat);
 
@@ -205,9 +205,9 @@ public class ShoppingCart_Adapter extends RecyclerView.Adapter<ShoppingCart_Adap
     }
 
     private void updatePrice(@NonNull MyHolderProducts holder, float TotalPrice) {
-        NumberFormat numberFormat = NumberFormat.getInstance(new Locale("pt", "BR"));
+        NumberFormat numberFormat = NumberFormat.getInstance();
         numberFormat.setMaximumFractionDigits(2);
-        holder.txt_full_price_prod_shoppingCart.setText("R$ " + numberFormat.format(TotalPrice));
+        holder.txt_full_price_prod_shoppingCart.setText("đ" + numberFormat.format(TotalPrice));
 
         UpdatePriceTexts(numberFormat);
     }
@@ -217,7 +217,7 @@ public class ShoppingCart_Adapter extends RecyclerView.Adapter<ShoppingCart_Adap
         for (int i = 0; i < dtoProductsArrayList.size(); i++){
             valueGet += Float.parseFloat(dtoProductsArrayList.get(i).getTotalPrice());
         }
-        txtTotal.setText(context.getString(R.string.total) + ": R$ " + numberFormat.format(valueGet));
+        txtTotal.setText(context.getString(R.string.total) + ": đ " + numberFormat.format(valueGet));
         txtOrderNow.setText(context.getString(R.string.txt_continue) + " (" + numberFormat.format(valueGet) + ")");
     }
 

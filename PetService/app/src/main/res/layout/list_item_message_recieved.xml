@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardviewfw"
+    android:layout_width="wrap_content"
+    android:elevation="@dimen/_50sdp"
+    app:cardCornerRadius="@dimen/_50sdp"
+    android:layout_height="wrap_content">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/simsimi_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/cardview_light_background"
+        android:src="@drawable/mewo" />
+</androidx.cardview.widget.CardView>
+
+<!--    android:onClick="showProfile"-->
+    <com.github.library.bubbleview.BubbleTextView
+        android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/cardviewfw"
+        android:elevation="@dimen/_50sdp"
+        android:padding="10dp"
+        android:textColor="#0E0E0E"
+        app:angle="8dp"
+        app:arrowCenter="true"
+        app:arrowHeight="10dp"
+        app:arrowLocation="left"
+        app:arrowPosition="14dp"
+        app:arrowWidth="8dp"
+        app:bubbleColor="#E6F1EEEF" />
+
+</RelativeLayout>

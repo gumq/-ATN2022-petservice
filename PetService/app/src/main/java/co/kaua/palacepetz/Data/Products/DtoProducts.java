@@ -5,7 +5,23 @@ import android.graphics.Bitmap;
 public class DtoProducts {
     int cd_prod, cd_category, amount, popular;
     float product_price;
-    String nm_category, nm_product, species, description, date_prod, shelf_life, image_prod;
+    String nm_category;
+    String nm_product;
+    String species;
+    String description;
+    String date_prod;
+    String shelf_life;
+    String image_prod;
+    String linkshopee;
+
+    public String getLinkshopee() {
+        return linkshopee;
+    }
+
+    public void setLinkshopee(String linkshopee) {
+        this.linkshopee = linkshopee;
+    }
+
 
     public int getCd_prod() {
         return cd_prod;

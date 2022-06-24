@@ -40,8 +40,8 @@ public class FollowOrderActivity extends FragmentActivity implements OnMapReadyC
     private int id_user;
     static String name_user, _Email, cpf_user, address_user, complement, phone_user, birth_date, img_user;
     String zipcode = "01310-100";
-    private double longitude = -46.6502263;
-    private double latitude =  -23.5678371;
+    private double longitude = 10.6502263;
+    private double latitude =  166.5678371;
     LatLng locationMap;
 
     //  Order Information

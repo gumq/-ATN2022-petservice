@@ -32,7 +32,7 @@ public class AsyncProducts_SearchMain extends AsyncTask {
 
     @Override
     protected Object doInBackground(Object[] objects) {
-        String json =  JsonHandler.getJson("https://palacepetzapi.herokuapp.com/products/list/");
+        String json =  JsonHandler.getJson("https://gumq.github.io/palacepetzapi/petdataa.json");
         try {
             JSONObject jsonObject = new JSONObject(json);
             JSONArray jsonArray = jsonObject.getJSONArray("Search");

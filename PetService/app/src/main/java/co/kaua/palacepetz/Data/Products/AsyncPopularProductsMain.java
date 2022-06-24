@@ -49,7 +49,7 @@ public class AsyncPopularProductsMain extends AsyncTask {
 
     @Override
     protected Object doInBackground(Object[] objects) {
-        String json =  JsonHandler.getJson("https://palacepetzapi.herokuapp.com/products/list/filter/popular");
+        String json =  JsonHandler.getJson("https://gumq.github.io/palacepetzapi/petpopular.json");
         products_adapter = null;
         try {
             JSONObject jsonObject = new JSONObject(json);
@@ -68,6 +68,8 @@ public class AsyncPopularProductsMain extends AsyncTask {
                 dtoProducts.setShelf_life(jsonArray.getJSONObject(i).getString("shelf_life"));
                 dtoProducts.setImage_prod(jsonArray.getJSONObject(i).getString("image_prod"));
                 dtoProducts.setPopular(jsonArray.getJSONObject(i).getInt("popular"));
+                dtoProducts.setLinkshopee(jsonArray.getJSONObject(i).getString("linkshopee"));
+
                 arrayListDto.add(dtoProducts);
             }
             products_adapter = new PopularProducts_Adapter(arrayListDto, context);
@@ -100,7 +102,10 @@ public class AsyncPopularProductsMain extends AsyncTask {
                         goToDetails.putExtra("description", arrayListDto.get(position).getDescription());
                         goToDetails.putExtra("product_price", arrayListDto.get(position).getProduct_price());
                         goToDetails.putExtra("amount", arrayListDto.get(position).getAmount());
+                        goToDetails.putExtra("linkshopee", arrayListDto.get(position).getLinkshopee());
+
                         goToDetails.putExtra("id_user", _IdUser);
+
                         context.startActivity(goToDetails);
                     }
 

@@ -28,7 +28,7 @@ public class LoadingDialog {
         dialog.setContentView(R.layout.adapter_custom_loading);
         LottieAnimationView progressBarDialog = dialog.findViewById(R.id.progressBarDialog);
 
-        timer.postDelayed(() -> progressBarDialog.setSpeed((float) 2.5),5500);
+        timer.postDelayed(() -> progressBarDialog.setSpeed((float) 2.5),3000);
 
         dialog.show();
     }

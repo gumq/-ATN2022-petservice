@@ -1,5 +1,6 @@
 package co.kaua.palacepetz.Firebase;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.Log;
 
@@ -14,6 +15,7 @@ public class ConfFirebase {
     private static StorageReference firebaseStorage;
     private static FirebaseAuth firebaseAuth;
 
+    @SuppressLint("MissingPermission")
     public static FirebaseAnalytics getFirebaseAnalytics(Context context){
         if (firebaseAnalytics == null){
             firebaseAnalytics = FirebaseAnalytics.getInstance(context);
@@ -31,7 +33,7 @@ public class ConfFirebase {
     public static StorageReference getFirebaseStorage(){
         if (firebaseStorage == null){
             firebaseStorage = FirebaseStorage.getInstance().getReference();
-            Log.d("ProfileUpload", firebaseStorage + ""); // gs://palacepetz-22a1b.appspot.com
+            Log.d("ProfileUpload", firebaseStorage + ""); //
         }
         return firebaseStorage;
     }

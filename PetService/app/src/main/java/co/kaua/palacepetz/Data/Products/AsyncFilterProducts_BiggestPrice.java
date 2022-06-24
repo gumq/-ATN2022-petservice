@@ -51,7 +51,7 @@ public class AsyncFilterProducts_BiggestPrice extends AsyncTask {
 
     @Override
     protected Object doInBackground(Object[] objects) {
-        String json =  JsonHandler.getJson("https://palacepetzapi.herokuapp.com/products/list/filter/biggestprice/");
+        String json =  JsonHandler.getJson("https://gumq.github.io/palacepetzapi/biggestprice.json");
         products_adapter = null;
         try {
             JSONObject jsonObject = new JSONObject(json);

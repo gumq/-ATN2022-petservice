@@ -7,7 +7,7 @@
     <string name="PETSHOP">PET SHOP</string>
     <string name="THUY">TRẠM THÚ Y</string>
     <string name="atm">ATM</string>
-    <string name="tourist_attraction">ĐIỂM ĐÔNG NGƯỜI</string>
+    <string name="back">Trang Chính</string>
     <string name="airports">Education</string>
 
     <!-- Titles and desc -->
@@ -38,18 +38,18 @@ Khám phá</string>
     <!-- Sing In / Sing Up Screen -->
     <string name="login">ĐĂNG NHẬP</string>
     <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="sing_in">Sing in</string>
-    <string name="forgot_your_password_recover">Forgot your password?</string>
-    <string name="sing_up"><u>Sing up</u></string>
-    <string name="remember_me">Remember me</string>
-    <string name="create_account">Create Account</string>
-    <string name="first_name">First Name</string>
-    <string name="last_name">Last name</string>
-    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Mật khẩu</string>
+    <string name="sing_in">Đăng Nhập</string>
+    <string name="forgot_your_password_recover">Quên mật khẩu?</string>
+    <string name="sing_up"><u>Đăng Ký</u></string>
+    <string name="remember_me">Nhớ mật khẩu</string>
+    <string name="create_account">Tạo mật khẩu</string>
+    <string name="first_name">Tên</string>
+    <string name="last_name">Họ</string>
+    <string name="confirm_password">Nhập lại mật khẩu</string>
     <string name="minimum_eight_characters">Minimum 8 characters</string>
     <string name="passwords_do_not_match">Passwords do not match</string>
-    <string name="haveAccount_signIn">Already have an account? <b>Sign in.</b></string>
+    <string name="haveAccount_signIn">Đã có tài khoản <b>Đăng Nhập.</b></string>
     <string name="necessary_to_insert_the_last_name">Cần thiết để chèn họ</string>
     <string name="necessary_to_insert_the_First_name">Cần thiết để chèn tên</string>
     <string name="email_required">Email, cpf or username is required</string>
@@ -108,14 +108,13 @@ Không tìm thấy thiết bị được ghép nối nào, vui lòng ghép nối
     <string name="cpfExample" translatable="false">000000000</string>
     <string name="cepexample" translatable="false">00000-000</string>
     <string name="address">Address</string>
-    <string name="complement">Complement</string>
     <string name="editProfile">Edit Profile</string>
     <string name="gallery">Gallery</string>
     <string name="cancel">Cancel</string>
     <string name="select_upload_method">Select the upload method</string>
     <string name="change_profile_photo">Change profile photo</string>
     <string name="camera">Camera</string>
-    <string name="cpf">CPF</string>
+    <string name="cpf">Số điện thoại</string>
     <string name="cep">ZIPCODE</string>
     <string name="couldnt_insert">Couldn\'t insert your profile image</string>
     <string name="select_an_image">Select an image</string>
@@ -124,8 +123,8 @@ Không tìm thấy thiết bị được ghép nối nào, vui lòng ghép nối
     <!-- Register / Update Address -->
     <string name="title_activity_register_address" translatable="false">Map</string>
     <string name="register_address">REGISTER ADDRESS</string>
-    <string name="street">Street</string>
-    <string name="number">Number</string>
+    <string name="street">Địa chỉ</string>
+    <string name="number">Số điện thoại</string>
     <string name="home" translatable="false">TRANG CHÍNH</string>
     <string name="palaceFountain">KHU THÀNH VIÊN VIP</string>
     <string name="myOrders">ĐƠN HÀNG CỦA TÔI</string>
@@ -185,11 +184,11 @@ Không tìm thấy thiết bị được ghép nối nào, vui lòng ghép nối
 
     <!-- Services -->
     <string name="services">DỊCH VỤ</string>
-    <string name="choose_a_service">CHỌN MỘT DỊCH VỤ</string>
-    <string name="veterinary_consultation">TƯ VẤN THÚ Y</string>
-    <string name="bath_and_tosa">TẮM VÀ LÀM ĐẸP</string>
-    <string name="schedule_consultation">TƯ VẤN LỊCH TRÌNH</string>
-    <string name="schedule_bath_and_tosa">TƯ VẤN TẮM VÀ LÀM ĐẸP</string>
+    <string name="choose_a_service">DỊCH VỤ</string>
+    <string name="veterinary_consultation">TÁN GẪU CÙNG PET ẢO</string>
+    <string name="bath_and_tosa">TƯ VẤN DỊCH VỤ VỚI CHUYÊN GIA</string>
+    <string name="schedule_consultation">VÀO NGAY</string>
+    <string name="schedule_bath_and_tosa">TƯ VẤN CHĂM SÓC, TẮM VÀ LÀM ĐẸP</string>
     <string name="select_a_time">Chọn thời gian</string>
     <string name="select_a_date">Chọn ngày</string>
     <string name="its_not_possible_scheduleYear">Không thể lên lịch một cuộc hẹn vào năm nhất định.</string>
@@ -300,8 +299,8 @@ Ghi chú. Khi kích hoạt một phiếu giảm giá, nó sẽ được kích ho
 Để có thể đăng ký một con vật cưng, bạn phải đăng ký ngày sinh của mình, vì bạn phải đủ tuổi hợp pháp để nuôi một con vật cưng. \ NBạn có muốn đăng ký ngày sinh của mình không?</string>
     <string name="to_register_a_pet_need_be_biggest_18">Chỉ những người trên 18 tuổi mới có thể đăng ký động vật.</string>
     <string name="version">Version</string>
-    <string name="your_are_welcome">You\'re welcome!</string>
-    <string name="firstTime_desc">How is your first access, choose a way to continue.</string>
+    <string name="your_are_welcome">Chào mừng bạn</string>
+    <string name="firstTime_desc">Lần truy cập đầu tiên của bạn như thế nào, hãy chọn tiếp tục.</string>
     <string name="continue_without_account">TIẾP TỤC MÀ KHÔNG CÓ TÀI KHOẢN</string>
     <string name="shortCut">Phím tắt</string>
     <string name="search_with_dots">Search…</string>
@@ -309,7 +308,7 @@ Ghi chú. Khi kích hoạt một phiếu giảm giá, nó sẽ được kích ho
     <string name="hello">Hello,</string>
     <string name="search_cant_be_null">The survey cannot be empty, please fill in the field.</string>
     <string name="product_not_fount">Something wrong here…\nThe informed product was not found, we apologize for the inconvenience.</string>
-    <string name="login_types">Email, cpf or username</string>
+    <string name="login_types">Email, or username</string>
     <string name="dont_have_an_account">Don\'t have an account? <b>Register</b></string>
     <string name="sign_up">Sing up</string>
     <string name="login_text">Let\'s sign you in.</string>
@@ -319,9 +318,9 @@ Ghi chú. Khi kích hoạt một phiếu giảm giá, nó sẽ được kích ho
     <string name="desc_fountain_technology">PalaceFountain có một máy tính siêu nhỏ có khả năng duy trì giao tiếp trực tiếp với thiết bị của bạn, gửi và nhận thông tin về cách thêm nước, với một máy bơm nước có khả năng bơm 80 đến 120 lít mỗi giờ.</string>
     <string name="desc_fountain_comfort">Với PalaceFountain, bạn có thể bổ sung nước cho thú cưng của mình mà không cần phải rời khỏi ghế dài.</string>
     <string name="shipping">Shipping: FREE</string>
-    <string name="your_account_was_created">Your account was created!</string>
-    <string name="open_email">Open email</string>
-    <string name="please_confirmEmail">Please confirm in the email before logging in.</string>
+    <string name="your_account_was_created">Tải khoản đã được tạo</string>
+    <string name="open_email">Mở email</string>
+    <string name="please_confirmEmail">Vui lòng xác nhận trong email trước khi đăng nhập.</string>
     <string name="maximum_amount_reached_no_stock">Đã đạt đến số lượng tối đa, trong kho của chúng tôi, chúng tôi chỉ có %23000VNĐ s của sản phẩm này.</string>
     <string name="help">GIÚP ĐỠ</string>
     <string name="authFailed_thisCpf">Authentication failed!\nThis CPF is already registered.</string>
@@ -334,8 +333,7 @@ Ghi chú. Khi kích hoạt một phiếu giảm giá, nó sẽ được kích ho
     <string name="problems_with_order">Các vấn đề với đơn đặt hàng.</string>
     <string name="tell_us"><i>Liên hệ với chúng tôi.</i></string>
     <string name="common_questions">Câu hỏi thường gặp</string>
-    <string name="i_do_not_receive_discount_coupon">
-Tôi không nhận được phiếu giảm giá.</string>
+    <string name="i_do_not_receive_discount_coupon">Tôi không nhận được phiếu giảm giá.</string>
     <string name="i_want_to_change_account_details">Tôi muốn thay đổi chi tiết tài khoản.</string>
     <string name="i_want_to_work_at_palace">Tôi muốn làm việc tại Pashopee.</string>
     <string name="i_want_to_be_a_supplier">Tôi muốn trở thành một nhà cung cấp.</string>
@@ -347,18 +345,18 @@ Tôi không nhận được phiếu giảm giá.</string>
     <string name="policy_and_terms">Chính sách và Điều khoản</string>
     <string name="check_out_our_terms_of_use">Kiểm tra các điều khoản sử dụng của chúng tôi.</string>
     <string name="about_Palace_App">Giới thiệu về ứng dụng PetShoppe</string>
-    <string name="a_little_about_the_app">A little about the app</string>
-    <string name="my_account_has_been_hacked">My account has been hacked</string>
-    <string name="i_want_to_change_account_data">I want to change account data</string>
-    <string name="i_want_to_delete_my_account">I want to delete my account</string>
-    <string name="i_want_to_change_my_password">I want to change my password</string>
+    <string name="a_little_about_the_app">Thông tin về ứng dụng</string>
+    <string name="my_account_has_been_hacked">Tài khoản của tôi đã bị xâm phạm</string>
+    <string name="i_want_to_change_account_data">Tôi muốn thay đổi dữ liệu tài khoản</string>
+    <string name="i_want_to_delete_my_account">Tôi muốn xóa tài khoản của mình</string>
+    <string name="i_want_to_change_my_password">Tôi muốn thay đổi mật khẩu của mình</string>
     <string name="security_tips">Mẹo bảo mật</string>
     <string name="desc_do_not_receive_discount">Phiếu giảm giá của chúng tôi được vận chuyển vào các ngày lễ hoặc trong những dịp đặc biệt, chẳng hạn như trong đơn đặt hàng đầu tiên của bạn.</string>
     <string name="desc_my_account_has_been_hacked">Nếu điều này đã xảy ra, đừng lo lắng: kẻ tấn công không có quyền truy cập vào dữ liệu thanh toán của bạn, vì nó chỉ được lưu vào thiết bị bạn đã đăng ký. Chúng tôi khuyên bạn nên thay đổi mật khẩu của mình.</string>
     <string name="anonymous_user">Người dùng ẩn danh</string>
-    <string name="desc_i_want_to_change_my_password">To change your password, simply log out of your account, go to the login screen and click on the option \"I forgot my password\"</string>
-    <string name="desc_security_tips">• PalacePetz cares a lot about your security so here are some tips, PalacePetz will never ask for your personal information like cpf, password etc…\n\n• <b>Attention with fake email and SMS</b> - Check if the email sender is palacepetz.shop@gmail.com before replying to any contact and do not share your details via SMS or Whatsapp;\n\n<b>• Keep your app up to date:</b> The more recent your update, the more safe your device is. Lack of updates opens security holes that can be used by malicious people.</string>
-    <string name="desc_delete_account">You can delete your PalacePetz account at any time. If you change your mind, you might not be able to get it back.\n\nPlease contact an employee so we can delete your account.</string>
+    <string name="desc_i_want_to_change_my_password">Để thay đổi mật khẩu của bạn, chỉ cần đăng xuất khỏi tài khoản của bạn, chuyển đến màn hình đăng nhập và nhấp vào tùy chọn \ "Tôi quên mật khẩu \"</string>
+    <string name="desc_security_tips">• PetShopee quan tâm rất nhiều đến bảo mật của bạn, vì vậy đây là một số mẹo, PalacePetz sẽ không bao giờ hỏi thông tin cá nhân của bạn như mật khẩu, v.v… \ n \ n • <b>Attention with fake email and SMS</b> - Check if the email sender is palacepetz.shop@gmail.com before replying to any contact and do not share your details via SMS or Whatsapp;\n\n<b>• Keep your app up to date:</b> The more recent your update, the more safe your device is. Lack of updates opens security holes that can be used by malicious people.</string>
+    <string name="desc_delete_account">Bạn có thể xóa tài khoản PetShope của mình bất kỳ lúc nào. Nếu bạn đổi ý, bạn có thể không lấy lại được. \ N \ nVui lòng liên hệ với nhân viên để chúng tôi có thể xóa tài khoản của bạn.</string>
     <string name="test_water_pump">Test water pump</string>
     <string name="cancel_water">Cancel Water</string>
     <string name="who_are_we">Về chúng tôi</string>
@@ -399,8 +397,8 @@ Lý do hủy bỏ là gì?</string>
     <string name="i_cant_go_at_the_scheduled_time">Tôi không thể đi vào thời gian đã định</string>
     <string name="delivery_is_not_selected">
 Phương thức phân phối chưa được chọn</string>
-    <string name="fixed_price_consultation">Giá cố định: 90.000đ</string>
-    <string name="fixed_price_bath">Giá cố định: 90.000đ</string>
+    <string name="fixed_price_consultation">Trò chuyện nào</string>
+    <string name="fixed_price_bath">Giá: 90.000đ</string>
     <string name="txt_desc_account_disable">Xin lỗi vì sự bất tiện này nhưng tài khoản của bạn đã bị vô hiệu hóa, vui lòng liên hệ với bộ phận hỗ trợ của chúng tôi để hiểu lý do</string>
     <string name="delivered">Đã giao hàng</string>
     <string name="txt_desc_developers">Xin chào, ứng dụng này được phát triển cho mục đích hoàn thành đồ án tốt nghiệp, vì vậy thông tin trình bày trong ứng dụng này là không có thật, chúng tôi yêu cầu bạn không nhập thông tin thực như số thẻ tín dụng vì các mục trong ứng dụng này chỉ mang tính chất minh họa, để biết thêm thông tin nhấp vào nút \ "Nhà phát triển \".</string>
@@ -417,4 +415,7 @@ Mã QR này không phải là mã sản phẩm PetShoppe.</string>
     <string name="call_not_available">Not available</string>
     <string name="travel_default_mode">Đi bộ</string>
     <string name="suggestions">Place</string>
+    <string name="incoming_meeting_invitation">Cuộc gọi tới từ</string>
+    <string name="complement">Ghi chú</string>
+    <string name="profile_decp">"Tôi là 1 thú cưng ảo có thể được điều khiển bằng giọng nói, người có thể mở bất kỳ ứng dụng phổ biến nào trên điện thoại di động của bạn, tìm kiếm url trên trình duyệt di động của bạn, tự trả lời thông minh các cuộc trò chuyện nhỏ, gọi cho một người trong danh sách liên hệ của bạn,.. "</string>
 </resources>

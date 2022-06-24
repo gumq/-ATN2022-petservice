@@ -340,6 +340,7 @@ public class DeviceControlling extends AppCompatActivity {
             loadingDialog.startLoading();
         }
 
+        @SuppressLint("MissingPermission")
         @Override
         protected Void doInBackground(Void... devices) {
             try {

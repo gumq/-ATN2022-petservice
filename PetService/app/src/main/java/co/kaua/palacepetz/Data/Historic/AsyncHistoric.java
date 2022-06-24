@@ -54,7 +54,7 @@ public class AsyncHistoric extends AsyncTask {
 
     @Override
     protected Object doInBackground(Object[] objects) {
-        String json =  JsonHandler.getJson("https://palacepetzapi.herokuapp.com/user/historic-product/" + id_user);
+        String json =  JsonHandler.getJson("https://gumq.github.io/palacepetzapi/petpopular.json");
         Historic_Adapter historic_adapter = null;
         try {
             JSONObject jsonObject = new JSONObject(json);

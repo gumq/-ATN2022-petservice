@@ -271,6 +271,7 @@ public class RegisterAddressActivity extends FragmentActivity implements OnMapRe
         }
     }
 
+    @SuppressLint("MissingPermission")
     @SuppressWarnings({"RedundantIfStatement"})
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {

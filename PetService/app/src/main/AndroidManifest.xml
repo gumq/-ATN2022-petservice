@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="co.kaua.palacepetz">
 
     <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -13,6 +15,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -25,17 +28,21 @@
         <activity android:name=".Activitys.IntroActivity" />
         <activity android:name=".Data.User.MainFindnearplace"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Methods.CaptureAct"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
             android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity android:name=".Activitys.MainChatBotAi"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Activitys.MyProfileCb"/>
+        <activity android:name=".Activitys.ForProfile"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -46,11 +53,12 @@
         <activity
             android:name=".Activitys.FollowOrderActivity"
             android:label="@string/title_activity_follow_order" />
-        <activity android:name=".Activitys.Pets.RegisterPetActivity" />
+        <activity android:name=".Activitys.Pets.RegisterPetActivity"
+            android:exported="true" />
         <activity android:name=".Activitys.Pets.AllPetsActivity" />
         <activity android:name=".Activitys.LpetActivity"
             android:theme="@style/Theme.PalacePetz"
-           >
+            >
         </activity>
         <activity android:name=".Activitys.PetDetailActivity"
             android:theme="@style/Theme.PalacePetz"
@@ -86,8 +94,14 @@
         <activity
             android:name=".Activitys.ProductDetailsActivity"
             android:theme="@style/ProductDetails" />
-        <activity android:name=".Activitys.SplashScreen">
+        <activity android:name=".Activitys.SplashScreen"
+            android:exported="true">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 

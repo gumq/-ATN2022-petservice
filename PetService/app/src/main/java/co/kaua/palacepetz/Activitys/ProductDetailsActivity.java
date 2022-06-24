@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
@@ -46,7 +48,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
     private LoadingDialog loadingDialog;
     int cd_prod;
     private String ToastAlert;
-    String image_prod, nm_product, description;
+    String image_prod, nm_product, description,linkshopee;
 
     //  User information
     String _Email;
@@ -54,7 +56,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
     //  Retrofit
     final Retrofit CartRetrofit = new Retrofit.Builder()
-            .baseUrl("https://palacepetzapi.herokuapp.com/")
+            .baseUrl("https://youtube.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build();
 
@@ -66,7 +68,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
         setTheme(R.style.DevicePresentation);
         Ids();
         ToastAlert = getString(R.string.maximum_amount_reached);
-        NumberFormat numberFormat = NumberFormat.getInstance(new Locale("pt", "BR"));
+        NumberFormat numberFormat = NumberFormat.getInstance();
         numberFormat.setMaximumFractionDigits(2);
 
         Bundle bundle = getIntent().getExtras();
@@ -74,6 +76,8 @@ public class ProductDetailsActivity extends AppCompatActivity {
         _Email = userInfo.getEmail();
         _IdUser = userInfo.getId_user();
         cd_prod = bundle.getInt("cd_prod");
+        linkshopee = bundle.getString("linkshopee");
+      //  Log.d("VVV",linkshopee);
         if (bundle.getString("nm_product") == null){
             loadingDialog = new LoadingDialog(ProductDetailsActivity.this);
             loadingDialog.startLoading();
@@ -118,6 +122,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
             description = bundle.getString("description");
             unit_prod_price = bundle.getFloat("product_price");
             qt_prodGet = bundle.getInt("amount");
+            linkshopee = bundle.getString("linkshopee");
             loadProdsTexts();
             SaveOnHistoric();
             setNewPrice(numberFormat);
@@ -158,36 +163,41 @@ public class ProductDetailsActivity extends AppCompatActivity {
         arrowGoBack_ProductDetails.setOnClickListener(v -> finish());
 
         cardBtn_AddToCart.setOnClickListener(v -> {
-            if (_IdUser != 0){
-                loadingDialog = new LoadingDialog(ProductDetailsActivity.this);
-                loadingDialog.startLoading();
-                DtoShoppingCart cartItems = new DtoShoppingCart(cd_prod, _IdUser, qt_prod, String.valueOf(unit_prod_price), String.valueOf(full_prod_price), String.valueOf(full_prod_price));
-                CartServices cartServices = CartRetrofit.create(CartServices.class);
-                Call<DtoShoppingCart> cartCall = cartServices.insertItemOnCart(cartItems);
-                cartCall.enqueue(new Callback<DtoShoppingCart>() {
-                    @Override
-                    public void onResponse(@NonNull Call<DtoShoppingCart> call, @NonNull Response<DtoShoppingCart> response) {
-                        if(response.code() == 201){
-                            loadingDialog.dimissDialog();
-                            ToastHelper.toast(ProductDetailsActivity.this, getString(R.string.product_successfully_inserted));
-                            finish();
-                        }else if(response.code() == 409){
-                            loadingDialog.dimissDialog();
-                            ToastHelper.toast(ProductDetailsActivity.this, getString(R.string.product_into_your_cart));
-                        }
-                        else{
-                            loadingDialog.dimissDialog();
-                            Warnings.showWeHaveAProblem(ProductDetailsActivity.this);
-                        }
-                    }
-                    @Override
-                    public void onFailure(@NonNull Call<DtoShoppingCart> call, @NonNull Throwable t) {
-                        loadingDialog.dimissDialog();
-                        Warnings.showWeHaveAProblem(ProductDetailsActivity.this);
-                    }
-                });
-            }else
-                Warnings.NeedLoginAlert(ProductDetailsActivity.this);
+
+        Log.e("BBB",linkshopee);
+            // An implicit intent, request a URL.
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(linkshopee.toString()));
+            this.startActivity(intent);
+//            if (_IdUser != 0){
+//                loadingDialog = new LoadingDialog(ProductDetailsActivity.this);
+//                loadingDialog.startLoading();
+//                DtoShoppingCart cartItems = new DtoShoppingCart(cd_prod, _IdUser, qt_prod, String.valueOf(unit_prod_price), String.valueOf(full_prod_price), String.valueOf(full_prod_price));
+//                CartServices cartServices = CartRetrofit.create(CartServices.class);
+//                Call<DtoShoppingCart> cartCall = cartServices.insertItemOnCart(cartItems);
+//                cartCall.enqueue(new Callback<DtoShoppingCart>() {
+//                    @Override
+//                    public void onResponse(@NonNull Call<DtoShoppingCart> call, @NonNull Response<DtoShoppingCart> response) {
+//                        if(response.code() == 201){
+//                            loadingDialog.dimissDialog();
+//                            ToastHelper.toast(ProductDetailsActivity.this, getString(R.string.product_successfully_inserted));
+//                            finish();
+//                        }else if(response.code() == 409){
+//                            loadingDialog.dimissDialog();
+//                            ToastHelper.toast(ProductDetailsActivity.this, getString(R.string.product_into_your_cart));
+//                        }
+//                        else{
+//                            loadingDialog.dimissDialog();
+//                            Warnings.showWeHaveAProblem(ProductDetailsActivity.this);
+//                        }
+//                    }
+//                    @Override
+//                    public void onFailure(@NonNull Call<DtoShoppingCart> call, @NonNull Throwable t) {
+//                        loadingDialog.dimissDialog();
+//                        Warnings.showWeHaveAProblem(ProductDetailsActivity.this);
+//                    }
+//                });
+//            }else
+//                Warnings.NeedLoginAlert(ProductDetailsActivity.this);
         });
     }
 
@@ -209,7 +219,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
     private void loadProdsTexts() {
         txt_product_name.setText(nm_product);
         txt_desc_prod.setText(description);
-        txt_price_product.setText("VNĐ " + unit_prod_price);
+        txt_price_product.setText(unit_prod_price+"đ");
         txtQt_prod.setText(qt_prod + "");
         Picasso.get().load(image_prod).into(imgProductDetails);
     }

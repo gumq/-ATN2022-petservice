@@ -49,21 +49,25 @@ public class Products_Adapter extends RecyclerView.Adapter<Products_Adapter.MyHo
     public void onBindViewHolder(@NonNull MyHolderProducts holder, int position) {
         Picasso.get().load(items.get(position).getImage_prod()).into(holder.img_product);
         holder.txt_product_name_allProducts.setText(items.get(position).getNm_product());
-        NumberFormat numberFormat = NumberFormat.getInstance(new Locale("pt", "BR"));
+        NumberFormat numberFormat = NumberFormat.getInstance();
         numberFormat.setMaximumFractionDigits(2);
-        holder.txt_product_price_allProducts.setText("R$ " + numberFormat.format(items.get(position).getProduct_price()));
+        holder.txt_product_price_allProducts.setText(numberFormat.format(items.get(position).getProduct_price())+" đ");
         holder.container_allProduct.setElevation(20);
         switch (items.get(position).getNm_category()){
-            case  "Alimentos":
+           // case  "Alimentos":
+            case  "Thức ăn":
                 holder.container_allProduct.setBackground( context.getDrawable(R.drawable.background_racoes) );
                 break;
-            case  "Acessórios":
+            //case  "Acessórios":
+            case  "Phụ kiện":
                 holder.container_allProduct.setBackground( context.getDrawable(R.drawable.background_accessories) );
                 break;
-            case  "Medicamentos":
+            //case  "Medicamentos":
+            case  "Thuốc":
                 holder.container_allProduct.setBackground( context.getDrawable(R.drawable.background_medicines) );
                 break;
-            case  "Estética":
+           // case  "Estética":
+            case  "Trang trí":
                 holder.container_allProduct.setBackground( context.getDrawable(R.drawable.background_aesthetics) );
                 break;
         }

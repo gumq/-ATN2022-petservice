@@ -55,7 +55,7 @@ public class AsyncProdCategory extends AsyncTask {
 
     @Override
     protected Object doInBackground(Object[] objects) {
-        String json =  JsonHandler.getJson("https://palacepetzapi.herokuapp.com/products/list/filter/category/" + cd_cat);
+        String json =  JsonHandler.getJson("https://gumq.github.io/palacepetzapi/" + cd_cat+".json");
         Products_Adapter products_adapter = null;
         try {
             JSONObject jsonObject = new JSONObject(json);

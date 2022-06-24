@@ -55,21 +55,21 @@ public class PopularProducts_Adapter extends RecyclerView.Adapter<PopularProduct
 
         Picasso.get().load(dtoProductsArrayList.get(position).getImage_prod()).into(holder.img_popularProduct);
         holder.txt_nameProd_popular.setText(dtoProductsArrayList.get(position).getNm_product());
-        NumberFormat numberFormat = NumberFormat.getInstance(new Locale("pt", "BR"));
+        NumberFormat numberFormat = NumberFormat.getInstance();
         numberFormat.setMaximumFractionDigits(2);
-        holder.txt_price_popularProduct.setText("R$ " + numberFormat.format(dtoProductsArrayList.get(position).getProduct_price()));
+        holder.txt_price_popularProduct.setText(  numberFormat.format(dtoProductsArrayList.get(position).getProduct_price())+" đ");
         holder.container_popularProducts.setElevation(10);
         switch (dtoProductsArrayList.get(position).getNm_category()){
-            case  "Alimentos":
+            case  "Thức ăn":
                 holder.container_popularProducts.setBackground( context.getDrawable(R.drawable.background_racoes) );
                 break;
-            case  "Acessórios":
+            case  "Phụ kiện":
                 holder.container_popularProducts.setBackground( context.getDrawable(R.drawable.background_accessories) );
                 break;
-            case  "Medicamentos":
+            case  "Thuốc":
                 holder.container_popularProducts.setBackground( context.getDrawable(R.drawable.background_medicines) );
                 break;
-            case  "Estética":
+            case  "Trang trí":
                 holder.container_popularProducts.setBackground( context.getDrawable(R.drawable.background_aesthetics) );
                 break;
         }

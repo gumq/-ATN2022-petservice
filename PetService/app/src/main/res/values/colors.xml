@@ -36,5 +36,6 @@
     <color name="tab_indicator_gray">#A8C0C0C0</color>
     <color name="device_presentation_title_color">#fff</color>
     <color name="device_presentation_description_color">#807F7F</color>
+    <color name="alice_blue">#F0F8FF</color>
 
 </resources>
