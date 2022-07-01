@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activitys.MainActivityZalopay">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/maestrocard"
+        android:padding="@dimen/_30sdp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="HỎI ĐÁP CÁC VẤN ĐỀ VỀ THÚ CƯNG CỦA BẠN"
+        >
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        android:src="@drawable/tuvan">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#D61A1A"
+        android:textSize="20dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="!!! Theo dõi chúng tôi qua fanpage để biết chi tiết thông tin!!! "
+>
+    </TextView>
+<TextView
+    android:id="@+id/fblink"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="@color/border_address_finishPurchase"
+    android:text="tại đây">
+
+</TextView>
+    <Button
+        android:id="@+id/btnvideocall"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_selected_container_cards_purchase"
+        android:text="Tham gia ngay" />
+
+
+</LinearLayout>

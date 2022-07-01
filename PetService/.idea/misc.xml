@@ -11,6 +11,7 @@
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable-v24/travel_mode_press_bg.xml" value="0.237" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable-v24/travel_mode_states.xml" value="0.1215" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable-v24/walking_icon.xml" value="0.237" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_accept_invitation.xml" value="0.16" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_accessories.xml" value="0.1295" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_adapter_pets.xml" value="0.1705" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_aesthetics.xml" value="0.1295" />
@@ -19,12 +20,21 @@
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_device_presentation.xml" value="0.1295" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_meeting_invitation.xml" value="0.1895" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_meeting_invitation_user_icon.xml" value="0.1895" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_menu_sheet.xml" value="0.16" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_noitemsoncart.xml" value="0.16" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_racoes.xml" value="0.16" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_register_card.xml" value="0.16" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_reject_invitation.xml" value="0.1895" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_tips_device.xml" value="0.16" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/background_user_icon.xml" value="0.1" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/bg_address_alert.xml" value="0.16" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/bg_edittext_search_main.xml" value="0.16" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/btn_cancel_schedule.xml" value="0.16" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/card_address_finish_purchase.xml" value="0.1295" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/card_continue_tips.xml" value="0.1295" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/card_flag_selected.xml" value="0.1295" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/card_no_selected_container_cards_purchase.xml" value="0.1295" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/container_register_address.xml" value="0.16" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/current_loc_icon.xml" value="0.1215" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/custom_button.xml" value="0.1" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/custom_cart.xml" value="0.1" />
@@ -36,13 +46,24 @@
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/default_card_flag.xml" value="0.1" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/device_presentation_button_border.xml" value="0.1" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/device_presentation_indicator_default.xml" value="0.1295" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/device_presentation_indicator_selected.xml" value="0.16" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/device_presentation_indicator_selector.xml" value="0.1295" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/edittext_schedule.xml" value="0.16" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/ic_accept.xml" value="0.19" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/ic_arrow_drop_down.xml" value="0.16" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/ic_arrow_right.xml" value="0.16" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/ic_arrowdown.xml" value="0.16" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/ic_audio.xml" value="0.16" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/ic_back.xml" value="0.16" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/ic_baseline_clear_24.xml" value="0.16" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/ic_edit_email_login.xml" value="0.1295" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/ic_reject.xml" value="0.1895" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/ic_send_24dp.xml" value="0.1295" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/drawable/putracao_bg_controlling.xml" value="0.16" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/activity_all_pets.xml" value="0.11041666666666666" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/activity_create_account.xml" value="0.25" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/activity_dashboard_callvideo.xml" value="0.264" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/activity_developers.xml" value="0.25" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/activity_device_controlling.xml" value="0.11041666666666666" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/activity_device_presentation.xml" value="0.176" />
@@ -71,6 +92,7 @@
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/activity_scheduled_services.xml" value="0.25" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/activity_splash_screen.xml" value="0.24615384615384617" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/activity_tips_fountain.xml" value="0.25" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/activity_zalopay.xml" value="0.2" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/adapter_address_alert.xml" value="0.25" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/adapter_address_alert_pruchase.xml" value="0.25" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/adapter_all_products.xml" value="0.25" />
@@ -92,7 +114,7 @@
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/adapter_menu_sheet_base_descriptions_alert_help.xml" value="0.25" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/adapter_menu_sheet_cancel_schedule_other_reason.xml" value="0.25" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/adapter_menu_sheet_cancel_schedule_reason.xml" value="0.25" />
-        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/adapter_menu_sheet_user.xml" value="0.25" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/adapter_menu_sheet_user.xml" value="0.152" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/adapter_myorders.xml" value="0.25" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/adapter_needlogin_sheet.xml" value="0.25" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/adapter_order_confirm.xml" value="0.25" />
@@ -128,6 +150,7 @@
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/search_dialog.xml" value="0.11041666666666666" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/layout/search_suggestions_card.xml" value="0.11041666666666666" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/menu/cart.xml" value="0.22870370370370371" />
+        <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/menu/menu.xml" value="0.25" />
         <entry key="..\:/Desktop/-ATN2022-petservice/-ATN2022-petservice/PetService/app/src/main/res/menu/menu_home.xml" value="0.22870370370370371" />
         <entry key="..\:/Dowloads/19_5_petshop/PalacePetz-main/PalacePetz-main/app/src/main/res/drawable/custom_cart.xml" value="0.108" />
         <entry key="..\:/Dowloads/19_5_petshop/PalacePetz-main/PalacePetz-main/app/src/main/res/layout/activity_all_pets.xml" value="0.2" />

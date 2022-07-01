@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="co.kaua.palacepetz">
+    package="co.tranlequyen.palacepetz">
 
     <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -22,27 +22,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PalacePetz">
-        <activity android:name=".Activitys.Developers"/>
-        <activity android:name=".Activitys.Services.ScheduledServicesActivity" />
-        <activity android:name=".Activitys.Help.HelpActivity" />
-        <activity android:name=".Activitys.IntroActivity" />
-        <activity android:name=".Data.User.MainFindnearplace"
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.Developers"/>
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.MainActivityZalopay"/>
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.Help.HelpActivity" />
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.IntroActivity" />
+        <activity android:name="co.tranlequyen.palacepetz.Data.User.MainFindnearplace"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".Methods.CaptureAct"
+            android:name="co.tranlequyen.palacepetz.Methods.CaptureAct"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
             android:windowSoftInputMode="stateAlwaysHidden" />
 
-        <activity android:name=".Activitys.MainChatBotAi"
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.MainChatBotAi"
             android:exported="true"
             android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".Activitys.MyProfileCb"/>
-        <activity android:name=".Activitys.ForProfile"/>
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.MyProfileCb"/>
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.DashboardActivity_Callvideo">
+            android:exported="true"
+
+        </activity>
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.ForProfile"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -51,16 +55,14 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
         <activity
-            android:name=".Activitys.FollowOrderActivity"
+            android:name="co.tranlequyen.palacepetz.Activitys.FollowOrderActivity"
             android:label="@string/title_activity_follow_order" />
-        <activity android:name=".Activitys.Pets.RegisterPetActivity"
-            android:exported="true" />
-        <activity android:name=".Activitys.Pets.AllPetsActivity" />
-        <activity android:name=".Activitys.LpetActivity"
+
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.LpetActivity"
             android:theme="@style/Theme.PalacePetz"
             >
         </activity>
-        <activity android:name=".Activitys.PetDetailActivity"
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.PetDetailActivity"
             android:theme="@style/Theme.PalacePetz"
             >
         </activity>
@@ -68,33 +70,20 @@
         <meta-data
             android:name="firebase_performance_logcat_enabled"
             android:value="true" /> <!-- Palace Fountain Activitys -->
+
         <activity
-            android:name=".Activitys.DeviceTipsActivity"
-            android:theme="@style/DevicePresentation" />
-        <activity
-            android:name=".Activitys.DeviceControlling"
-            android:theme="@style/DevicePresentation" />
-        <activity
-            android:name=".Activitys.DevicePairActivity"
-            android:theme="@style/DevicePresentation" />
-        <activity
-            android:name=".Activitys.DevicePresentationActivity"
-            android:theme="@style/DevicePresentation" />
-        <activity
-            android:name=".Activitys.RegisterAddressActivity"
+            android:name="co.tranlequyen.palacepetz.Activitys.RegisterAddressActivity"
             android:label="@string/title_activity_register_address" />
-        <activity android:name=".Activitys.EditProfileActivity" />
-        <activity android:name=".Activitys.ProfileActivity" />
-        <activity android:name=".Activitys.MainActivity" />
-        <activity android:name=".Activitys.ForgotPasswordActivity" />
-        <activity android:name=".Activitys.CreateAccountActivity" />
-        <activity android:name=".Activitys.LoginActivity" />
-        <activity android:name=".Activitys.Services.ScheduleAppointmentActivity" />
-        <activity android:name=".Activitys.Services.ScheduleBathAndTosaActivity" />
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.EditProfileActivity" />
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.ProfileActivity" />
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.MainActivity" />
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.ForgotPasswordActivity" />
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.CreateAccountActivity" />
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.LoginActivity" />
         <activity
-            android:name=".Activitys.ProductDetailsActivity"
+            android:name="co.tranlequyen.palacepetz.Activitys.ProductDetailsActivity"
             android:theme="@style/ProductDetails" />
-        <activity android:name=".Activitys.SplashScreen"
+        <activity android:name="co.tranlequyen.palacepetz.Activitys.SplashScreen"
             android:exported="true">
 
             <intent-filter>

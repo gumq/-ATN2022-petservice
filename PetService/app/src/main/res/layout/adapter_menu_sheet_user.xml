@@ -23,11 +23,11 @@
             android:id="@+id/icon_ProfileUser_sheetMenu"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/default_profile_image"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/q"
             android:visibility="visible"
             app:civ_border_color="@color/black"
             app:civ_border_width="1dp"
-            android:layout_marginStart="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -39,6 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
+            android:gravity="center"
             android:text="@string/app_name"
             android:textColor="@color/white"
             android:textSize="19sp"
@@ -49,209 +50,26 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Btn Fountain -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/BtnFountainsSheetUserMenu"
-        android:layout_width="150dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        app:cardBackgroundColor="@color/selected_menu_sheet"
-        app:cardCornerRadius="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_user_profile_sheet">
-
-        <!-- Container Fountain -->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <!-- Img Fountain -->
-            <ImageView
-                android:id="@+id/Img_BtnFountainSheetMenu"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:scaleType="fitXY"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/nearby"
-                app:layout_constraintBottom_toTopOf="@+id/txt_sheet_Fountain"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="ContentDescription" />
-
-            <!-- Text Fountain -->
-            <TextView
-                android:id="@+id/txt_sheet_Fountain"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/segoe_ui"
-                android:gravity="center"
-                android:text="CỬA HÀNG PET GẦN ĐÂY"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/BtnMyShoppingCartSheetMenu"
-        android:layout_width="155dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_user_profile_sheet">
-
-        <!-- Btn Shopping Cart -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="85dp"
-            app:cardBackgroundColor="@color/selected_menu_sheet"
-            app:cardCornerRadius="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <!-- Container My Orders -->
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <!-- Img Shopping Cart -->
-                <ImageView
-                    android:id="@+id/Img_BtnMyShoppingCartSheetMenu"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/icon_cart_buying"
-                    app:layout_constraintBottom_toTopOf="@+id/txt_sheet_ShoppingCart"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="ContentDescription"/>
-
-                <!-- Text Shopping Cart -->
-                <TextView
-                    android:id="@+id/txt_sheet_ShoppingCart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/segoe_ui"
-                    android:text="@string/my_shopping_cart"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <!-- Card Quantity Shopping Cart -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/base_QuantityItemsCart_sheet"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:cardBackgroundColor="@color/cards_background"
-            app:cardCornerRadius="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" >
-
-            <!-- Container -->
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <!-- Text Quantity Shopping Cart -->
-                <TextView
-                    android:id="@+id/txt_QuantityCart_sheet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/one"
-                    android:textColor="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Btn My Orders -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/BtnMyOrdersSheetUserMenu"
-        android:layout_width="150dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
-        app:cardBackgroundColor="@color/selected_menu_sheet"
-        app:cardCornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnMyShoppingCartSheetMenu">
 
-        <!-- Container My Orders -->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <!-- Img My Orders -->
-            <ImageView
-                android:id="@+id/Img_BtnMyOrdersSheetMenu"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/notes_sheetmenu"
-                app:layout_constraintBottom_toTopOf="@+id/txt_sheet_MyOrders"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="ContentDescription" />
-
-            <!-- Text My Orders -->
-            <TextView
-                android:id="@+id/txt_sheet_MyOrders"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/segoe_ui"
-                android:text="@string/myOrders"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
 
     <!-- Btn My Cards -->
+
     <androidx.cardview.widget.CardView
         android:id="@+id/BtnMyCardsSheetUserMenu"
-        android:layout_width="150dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="265dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="9dp"
         app:cardBackgroundColor="@color/selected_menu_sheet"
         app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/BtnLogOutSheetMenu"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnFountainsSheetUserMenu">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <!-- Container My Cards -->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -266,7 +84,7 @@
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/cards_icon"
+                android:src="@drawable/ic_calendar"
                 app:layout_constraintBottom_toTopOf="@+id/txt_sheet_MyCards"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -280,7 +98,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/segoe_ui"
-                android:text="@string/myCards"
+                android:gravity="center"
+                android:text="TƯ VẤN ONLINE"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -296,14 +115,12 @@
         android:id="@+id/BtnLogOutSheetMenu"
         android:layout_width="150dp"
         android:layout_height="85dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         app:cardBackgroundColor="@color/selected_menu_sheet"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnMyOrdersSheetUserMenu">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <!-- Container LogOut -->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -348,14 +165,12 @@
         android:id="@+id/BtnHelpSheetMenu"
         android:layout_width="150dp"
         android:layout_height="85dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
         app:cardBackgroundColor="@color/selected_menu_sheet"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnMyOrdersSheetUserMenu">
+        app:layout_constraintStart_toStartOf="parent">
 
         <!-- Container LogOut -->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -393,5 +208,46 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="269dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Img Shopping Cart -->
+        <ImageView
+            android:id="@+id/Img_BtnMyShoppingCartSheetMenu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bg_address_alert"
+            app:layout_constraintBottom_toTopOf="@+id/txt_sheet_ShoppingCart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <!-- Text Shopping Cart -->
+        <TextView
+            android:id="@+id/txt_sheet_ShoppingCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/segoe_ui"
+            android:text="@string/my_shopping_cart"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

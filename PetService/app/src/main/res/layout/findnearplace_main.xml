@@ -10,7 +10,7 @@
        android:id="@+id/details_fragment"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       class="co.kaua.palacepetz.Data.User.MapsFragment">
+       class="co.tranlequyen.palacepetz.Data.User.MapsFragment">
    </fragment>
 <!--    tools:openDrawer="start">-->
 <!--    android:id="@+id/drawer_layout">-->

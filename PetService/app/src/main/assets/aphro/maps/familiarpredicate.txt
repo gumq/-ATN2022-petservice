@@ -34,3 +34,7 @@ bro:brother
 sis:sister
 boyfriend:boyfriend
 girlfriend:girlfriend
+vo:vo
+chong:chong
+con:son
+ban:friend

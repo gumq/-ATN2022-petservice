@@ -79,7 +79,7 @@
                         android:layout_width="150dp"
                         android:layout_height="130dp"
                         android:layout_marginTop="20dp"
-                        android:src="@drawable/icon_cart_buying"
+                        android:src="@drawable/q"
                         android:visibility="visible"
                         app:civ_border_color="#FF000000"
                         app:civ_border_width="2dp"

@@ -50,8 +50,8 @@ Khám phá</string>
     <string name="minimum_eight_characters">Minimum 8 characters</string>
     <string name="passwords_do_not_match">Passwords do not match</string>
     <string name="haveAccount_signIn">Đã có tài khoản <b>Đăng Nhập.</b></string>
-    <string name="necessary_to_insert_the_last_name">Cần thiết để chèn họ</string>
-    <string name="necessary_to_insert_the_First_name">Cần thiết để chèn tên</string>
+    <string name="necessary_to_insert_the_last_name">Cần nhập họ</string>
+    <string name="necessary_to_insert_the_First_name">Cần nhập tên</string>
     <string name="email_required">Email, cpf or username is required</string>
     <string name="informed_email_is_invalid">Informed email is invalid</string>
     <string name="password_required">Password required</string>
@@ -99,7 +99,7 @@ Không tìm thấy thiết bị được ghép nối nào, vui lòng ghép nối
     <string name="yes">Yes</string>
     <string name="really_want_logOut">Bạn có muốn đăng xuất!</string>
     <string name="logout">LogOut</string>
-    <string name="historic">LỊCH SỬ MUA HÀNG</string>
+    <string name="historic">TÁN GẪU VỚI PET ẢO</string>
     <string name="leave">Leave</string>
 
     <!-- Profile / EditProfile Screen -->
@@ -126,8 +126,8 @@ Không tìm thấy thiết bị được ghép nối nào, vui lòng ghép nối
     <string name="street">Địa chỉ</string>
     <string name="number">Số điện thoại</string>
     <string name="home" translatable="false">TRANG CHÍNH</string>
-    <string name="palaceFountain">KHU THÀNH VIÊN VIP</string>
-    <string name="myOrders">ĐƠN HÀNG CỦA TÔI</string>
+    <string name="palaceFountain">MUA SẮM</string>
+    <string name="myOrders">VỀ CHÚNG TÔI</string>
     <string name="zipCode_is_invalid">ZipCode is invalid</string>
     <string name="error_in_get_your_address">Error in get your address</string>
     <string name="title_activity_maps" translatable="false">Map</string>
@@ -152,7 +152,7 @@ Không tìm thấy thiết bị được ghép nối nào, vui lòng ghép nối
     <string name="product_name">Tên sản phẩm</string>
     <string name="price">GIÁ</string>
     <string name="cpfinformedisInvalid">SĐT không tồn tại</string>
-    <string name="my_shopping_cart">GIỎ HÀNG</string>
+    <string name="my_shopping_cart">PET TRỢ LÝ ẢO</string>
     <string name="your_ShoppingCart_asEmpty">GIỎ HÀNG CỦA BẠN HIỆN TRỐNG.</string>
     <string name="see_products">XEM NHIỀU SẢN PHẨM</string>
     <string name="you_dont_haveAddressRegistered">BẠN CHƯA CÓ ĐỊA CHỈ ĐĂNG KÝ.</string>
@@ -163,7 +163,7 @@ Không tìm thấy thiết bị được ghép nối nào, vui lòng ghép nối
     <string name="ex_shelfLife_card" translatable="false">XX/XX</string>
     <string name="ex_numberCard_card" translatable="false">•••• •••• •••• ••••</string>
     <string name="fulanodetal" translatable="false">Falano de Tal</string>
-    <string name="myCards">THẺ CỦA TÔI</string>
+    <string name="myCards">BẢN ĐỒ QUANH ĐÂY</string>
     <string name="registered_cards">ĐĂNG KÍ THẺ</string>
     <string name="no_card_registered">KHÔNG CÓ THẺ ĐĂNG KÍ</string>
     <string name="add_card">THÊM THẺ</string>
@@ -185,7 +185,7 @@ Không tìm thấy thiết bị được ghép nối nào, vui lòng ghép nối
     <!-- Services -->
     <string name="services">DỊCH VỤ</string>
     <string name="choose_a_service">DỊCH VỤ</string>
-    <string name="veterinary_consultation">TÁN GẪU CÙNG PET ẢO</string>
+    <string name="veterinary_consultation">TÁN GẪU CÙNG PET TRỢ LÝ ẢO</string>
     <string name="bath_and_tosa">TƯ VẤN DỊCH VỤ VỚI CHUYÊN GIA</string>
     <string name="schedule_consultation">VÀO NGAY</string>
     <string name="schedule_bath_and_tosa">TƯ VẤN CHĂM SÓC, TẮM VÀ LÀM ĐẸP</string>
@@ -205,7 +205,7 @@ Không thể đặt lịch hẹn vào ngày đã thông báo.</string>
     <string name="optionTwoDeliveryMethod">2 - Tôi sẽ lấy Pet | Rút tiền trong PetShop</string>
     <string name="optionThreeDeliveryMethod">3 - PetShop sẽ lấy con vật | Tôi sẽ rút tiền trong PetShop</string>
     <string name="optionFourDeliveryMethod">4 - PetShop sẽ lấy thú | Nhận tại nơi ở</string>
-    <string name="add_to_cart">THÊM VÀO GIỎ HÀNG</string>
+    <string name="add_to_cart">MUA NGAY</string>
     <string name="one_is_the_minumum_quantity"> 1 là số lượng tối thiểu</string>
     <string name="maximum_amount_reached">Đã đạt đến số lượng tối đa, chỉ có thể thêm vào giỏ hàng của bạn 20 đơn vị sản phẩm.</string>
     <string name="see_my_pets">Xem thú cưng của tôi</string>
@@ -308,10 +308,10 @@ Ghi chú. Khi kích hoạt một phiếu giảm giá, nó sẽ được kích ho
     <string name="hello">Hello,</string>
     <string name="search_cant_be_null">The survey cannot be empty, please fill in the field.</string>
     <string name="product_not_fount">Something wrong here…\nThe informed product was not found, we apologize for the inconvenience.</string>
-    <string name="login_types">Email, or username</string>
-    <string name="dont_have_an_account">Don\'t have an account? <b>Register</b></string>
-    <string name="sign_up">Sing up</string>
-    <string name="login_text">Let\'s sign you in.</string>
+    <string name="login_types">Số điện thoại</string>
+    <string name="dont_have_an_account">Chưa có tài khoản? <b>Đăng ký</b></string>
+    <string name="sign_up">ĐĂNG KÝ</string>
+    <string name="login_text">Đăng nhập ngay</string>
     <string name="unitary">Unitary</string>
     <string name="comfort_and_agility">Comfort and agility</string>
     <string name="technology">Technology</string>
@@ -353,7 +353,7 @@ Ghi chú. Khi kích hoạt một phiếu giảm giá, nó sẽ được kích ho
     <string name="security_tips">Mẹo bảo mật</string>
     <string name="desc_do_not_receive_discount">Phiếu giảm giá của chúng tôi được vận chuyển vào các ngày lễ hoặc trong những dịp đặc biệt, chẳng hạn như trong đơn đặt hàng đầu tiên của bạn.</string>
     <string name="desc_my_account_has_been_hacked">Nếu điều này đã xảy ra, đừng lo lắng: kẻ tấn công không có quyền truy cập vào dữ liệu thanh toán của bạn, vì nó chỉ được lưu vào thiết bị bạn đã đăng ký. Chúng tôi khuyên bạn nên thay đổi mật khẩu của mình.</string>
-    <string name="anonymous_user">Người dùng ẩn danh</string>
+    <string name="anonymous_user">Quyền</string>
     <string name="desc_i_want_to_change_my_password">Để thay đổi mật khẩu của bạn, chỉ cần đăng xuất khỏi tài khoản của bạn, chuyển đến màn hình đăng nhập và nhấp vào tùy chọn \ "Tôi quên mật khẩu \"</string>
     <string name="desc_security_tips">• PetShopee quan tâm rất nhiều đến bảo mật của bạn, vì vậy đây là một số mẹo, PalacePetz sẽ không bao giờ hỏi thông tin cá nhân của bạn như mật khẩu, v.v… \ n \ n • <b>Attention with fake email and SMS</b> - Check if the email sender is palacepetz.shop@gmail.com before replying to any contact and do not share your details via SMS or Whatsapp;\n\n<b>• Keep your app up to date:</b> The more recent your update, the more safe your device is. Lack of updates opens security holes that can be used by malicious people.</string>
     <string name="desc_delete_account">Bạn có thể xóa tài khoản PetShope của mình bất kỳ lúc nào. Nếu bạn đổi ý, bạn có thể không lấy lại được. \ N \ nVui lòng liên hệ với nhân viên để chúng tôi có thể xóa tài khoản của bạn.</string>
@@ -384,7 +384,7 @@ Ghi nợ</string>
     <string name="veterinary">Thú y</string>
     <string name="time">Thời gian</string>
     <string name="date">Ngày</string>
-    <string name="all_appointments">Tất cả các cuộc hẹn
+    <string name="all_appointments">Tất cả dịch vụ
 </string>
     <string name="really_want_cancel_this_schedule">Do you really want to cancel this schedule?</string>
     <string name="cancel_schedule">Hủy bỏ lịch biểu</string>
@@ -398,14 +398,14 @@ Lý do hủy bỏ là gì?</string>
     <string name="delivery_is_not_selected">
 Phương thức phân phối chưa được chọn</string>
     <string name="fixed_price_consultation">Trò chuyện nào</string>
-    <string name="fixed_price_bath">Giá: 90.000đ</string>
+    <string name="fixed_price_bath">Hỏi đáp miễn phí</string>
     <string name="txt_desc_account_disable">Xin lỗi vì sự bất tiện này nhưng tài khoản của bạn đã bị vô hiệu hóa, vui lòng liên hệ với bộ phận hỗ trợ của chúng tôi để hiểu lý do</string>
     <string name="delivered">Đã giao hàng</string>
     <string name="txt_desc_developers">Xin chào, ứng dụng này được phát triển cho mục đích hoàn thành đồ án tốt nghiệp, vì vậy thông tin trình bày trong ứng dụng này là không có thật, chúng tôi yêu cầu bạn không nhập thông tin thực như số thẻ tín dụng vì các mục trong ứng dụng này chỉ mang tính chất minh họa, để biết thêm thông tin nhấp vào nút \ "Nhà phát triển \".</string>
     <string name="developers">Nhà phát triển</string>
     <string name="kaua_vitorio" translatable="false">Kauã Vitório</string>
     <string name="kaua_developer">Mobile | Android Developer</string>
-    <string name="view_portfolio">View portfolio</string>
+    <string name="view_portfolio">Xem thông tin</string>
     <string name="notice_payment_at_the_time">Notice, the payment for all services is made at the time of the service, we will not request any payment before.</string>
     <string name="desc_pedro">System, Infrastructure and Database Analyst</string>
     <string name="scan_the_qr_code">Quét mã QR</string>
